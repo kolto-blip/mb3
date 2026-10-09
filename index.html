@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}</style>
+<title>Қазақ–жоңғар соғыстары</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,800&family=PT+Sans:wght@400;700&family=PT+Mono&display=swap">
+<style>
+/* Layout: архив құжаты — тар мәтін бағаны, жабысқақ мәзір, басқару сатылары баспалдақ ретінде */
+:root{
+  /* Палитра: жоңғар тақырыбы · кешкі дала, алқызыл мен алтын, батырлар силуэті, қалқан */
+  --bg:#ead9bd; --paper:#f8efdc; --ink:#2a1c12; --muted:#6e5842; --line:#d6c09c;
+  --accent:#8c2a1b; --on-accent:#fff6e6; --gold:#8f6410; --gold-soft:#f0dcab; --accent-soft:#f3dccf;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3CfeColorMatrix values=%220 0 0 0 0.3 0 0 0 0 0.3 0 0 0 0 0.3 0 0 0 0.1 0%22/%3E%3C/filter%3E%3Crect width=%22240%22 height=%22240%22 filter=%22url%28%23n%29%22/%3E%3C/svg%3E");
+  --land:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221600%22 height=%22420%22 viewBox=%220 0 1600 420%22 preserveAspectRatio=%22xMidYMax slice%22%3E%3Ccircle cx=%221180%22 cy=%22200%22 r=%22120%22 fill=%22%23f3c27a%22 opacity=%220.45%22/%3E%3Cpath d=%22M760 70 q24 -22 48 -6 q10 -6 18 0 q8 -6 18 0 q24 -16 48 6 q-30 -6 -48 4 l-9 10 l-9 -10 q-18 -10 -48 -4z%22 fill=%22%235b3a26%22 opacity=%22.55%22/%3E%3Cpath d=%22M0 230 L90 180 L170 205 L260 150 L330 175 L410 120 L480 160 L560 140 L640 185 L720 150 L800 190 L880 135 L960 170 L1040 128 L1120 175 L1200 150 L1290 190 L1370 145 L1460 180 L1540 150 L1600 170 V420 H0Z%22 fill=%22%23b9a07c%22 opacity=%220.55%22/%3E%3Cpath d=%22M410 120 L432 134 L446 130 L460 146 L436 142 L420 150 L404 138Z M1040 128 L1060 142 L1078 138 L1088 150 L1062 148 L1046 152 L1030 140Z M260 150 L276 162 L290 160 L300 170 L278 168 L262 172 L248 162Z%22 fill=%22%23fff%22 opacity=%220.50%22/%3E%3Cpath d=%22M0 262 C180 236 360 268 560 250 C760 232 900 262 1100 244 C1300 228 1460 252 1600 240 V420 H0Z%22 fill=%22%23c9ad82%22/%3E%3Cg transform=%22translate%281040 232%29 scale%280.62 0.62%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281100 226%29 scale%280.66 0.66%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281165 230%29 scale%280.6 0.6%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281225 224%29 scale%280.64 0.64%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281290 229%29 scale%280.58 0.58%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281350 233%29 scale%280.55 0.55%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28250 252%29 scale%28-0.5 0.5%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28300 248%29 scale%28-0.52 0.52%29%22 fill=%22%235b3a26%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%235b3a26%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg fill=%22%235b3a26%22%3E%3Cpath d=%22M1418 250 L1418 150%22 stroke=%22%235b3a26%22 stroke-width=%223%22/%3E%3Cpath d=%22M1418 150 L1452 162 L1418 176Z%22/%3E%3Cpath d=%22M1414 150 h8 l-4 -10z%22/%3E%3Cpath d=%22M1418 176 q-6 10 0 20 q6 10 0 20%22 stroke=%22%235b3a26%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/g%3E%3Cpath d=%22M0 300 C220 282 420 312 700 296 C980 280 1240 306 1600 290 V420 H0Z%22 fill=%22%23d8c19a%22/%3E%3C/svg%3E");
+  --sky:linear-gradient(180deg,#f2d9b0 0%,#efdfc2 35%,var(--bg) 70%);
+  --band:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2232%22 viewBox=%220 0 48 32%22%3E%3Crect width=%2248%22 height=%2232%22 fill=%22%238c2a1b%22/%3E%3Cg fill=%22none%22 stroke=%22%23e8c25a%22 stroke-width=%222.4%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M24 30 V20 C24 10 12 8 10 15 C8 21 15 23 17 18 M24 20 C24 10 36 8 38 15 C40 21 33 23 31 18%22/%3E%3Cpath d=%22M24 6 V12%22/%3E%3Cpath d=%22M0 2 H48 M0 30 H48%22/%3E%3C/g%3E%3C/svg%3E");
+  --seal:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22 viewBox=%220 0 400 400%22%3E%3Cg fill=%22none%22 stroke=%22%237a2416%22 stroke-opacity=%220.13%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M40 360 L360 40 M40 40 L360 360%22 stroke-width=%228%22/%3E%3Cpath d=%22M360 40 l-6 -26 l-14 20z M40 40 l26 -6 l-20 -14z M40 360 l-6 26 l20 -14z M360 360 l26 6 l-14 -20z%22 fill=%22%237a2416%22 fill-opacity=%220.13%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22150%22 stroke-width=%227%22 fill=%22%237a2416%22 fill-opacity=%220.033%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22136%22 stroke-width=%222%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2282%22 stroke-width=%223%22/%3E%3Cg stroke-width=%225%22%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%280%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%2890%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28180%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28270%29%22/%3E%3C/g%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2210%22 fill=%22%237a2416%22 fill-opacity=%220.13%22/%3E%3C/g%3E%3Cdefs%3E%3Cpath id=%22r%22 d=%22M200 200 m-109 0 a109 109 0 1 1 218 0 a109 109 0 1 1 -218 0%22/%3E%3C/defs%3E%3Ctext fill=%22%237a2416%22 fill-opacity=%220.13%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22700%22 letter-spacing=%221.6%22%3E%3CtextPath href=%22%23r%22%3E%D0%9E%D0%A0%D0%91%D2%B0%D0%9B%D0%90%D2%9A 1643 %C2%B7 %D0%9E%D0%A0%D0%94%D0%90%D0%91%D0%90%D0%A1%D0%AB 1726 %C2%B7 %D0%91%D2%B0%D0%9B%D0%90%D0%9D%D0%A2%D0%AB 1727 %C2%B7 %D0%90%D2%A2%D0%AB%D0%A0%D0%90%D2%9A%D0%90%D0%99 1730 %C2%B7 %3C/textPath%3E%3C/text%3E%3C/svg%3E");
+  --ok:#2f7a4a; --bad:#a63d32;
+  --display:"Literata",Georgia,serif; --body:"PT Sans",system-ui,sans-serif; --mono:"PT Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#160f0b; --paper:#221811; --ink:#f0e2cb; --muted:#b49c7f; --line:#3f2e21;
+  --accent:#e57c60; --on-accent:#1a0d08; --gold:#e4b551; --gold-soft:#3b2b12; --accent-soft:#3b1c14;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3CfeColorMatrix values=%220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0%22/%3E%3C/filter%3E%3Crect width=%22240%22 height=%22240%22 filter=%22url%28%23n%29%22/%3E%3C/svg%3E");
+  --land:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221600%22 height=%22420%22 viewBox=%220 0 1600 420%22 preserveAspectRatio=%22xMidYMax slice%22%3E%3Ccircle cx=%221180%22 cy=%22200%22 r=%22120%22 fill=%22%23c0512f%22 opacity=%220.55%22/%3E%3Cpath d=%22M760 70 q24 -22 48 -6 q10 -6 18 0 q8 -6 18 0 q24 -16 48 6 q-30 -6 -48 4 l-9 10 l-9 -10 q-18 -10 -48 -4z%22 fill=%22%23070403%22 opacity=%22.55%22/%3E%3Cpath d=%22M0 230 L90 180 L170 205 L260 150 L330 175 L410 120 L480 160 L560 140 L640 185 L720 150 L800 190 L880 135 L960 170 L1040 128 L1120 175 L1200 150 L1290 190 L1370 145 L1460 180 L1540 150 L1600 170 V420 H0Z%22 fill=%22%233a2418%22 opacity=%220.9%22/%3E%3Cpath d=%22M410 120 L432 134 L446 130 L460 146 L436 142 L420 150 L404 138Z M1040 128 L1060 142 L1078 138 L1088 150 L1062 148 L1046 152 L1030 140Z M260 150 L276 162 L290 160 L300 170 L278 168 L262 172 L248 162Z%22 fill=%22%23fff%22 opacity=%220.81%22/%3E%3Cpath d=%22M0 262 C180 236 360 268 560 250 C760 232 900 262 1100 244 C1300 228 1460 252 1600 240 V420 H0Z%22 fill=%22%232a1a12%22/%3E%3Cg transform=%22translate%281040 232%29 scale%280.62 0.62%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281100 226%29 scale%280.66 0.66%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281165 230%29 scale%280.6 0.6%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281225 224%29 scale%280.64 0.64%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281290 229%29 scale%280.58 0.58%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281350 233%29 scale%280.55 0.55%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28250 252%29 scale%28-0.5 0.5%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28300 248%29 scale%28-0.52 0.52%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg fill=%22%23070403%22%3E%3Cpath d=%22M1418 250 L1418 150%22 stroke=%22%23070403%22 stroke-width=%223%22/%3E%3Cpath d=%22M1418 150 L1452 162 L1418 176Z%22/%3E%3Cpath d=%22M1414 150 h8 l-4 -10z%22/%3E%3Cpath d=%22M1418 176 q-6 10 0 20 q6 10 0 20%22 stroke=%22%23070403%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/g%3E%3Cpath d=%22M0 300 C220 282 420 312 700 296 C980 280 1240 306 1600 290 V420 H0Z%22 fill=%22%231d130d%22/%3E%3C/svg%3E");
+  --sky:linear-gradient(180deg,#3b1810 0%,#2a140e 30%,var(--bg) 70%);
+  --band:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2232%22 viewBox=%220 0 48 32%22%3E%3Crect width=%2248%22 height=%2232%22 fill=%22%234a160d%22/%3E%3Cg fill=%22none%22 stroke=%22%23e4b551%22 stroke-width=%222.4%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M24 30 V20 C24 10 12 8 10 15 C8 21 15 23 17 18 M24 20 C24 10 36 8 38 15 C40 21 33 23 31 18%22/%3E%3Cpath d=%22M24 6 V12%22/%3E%3Cpath d=%22M0 2 H48 M0 30 H48%22/%3E%3C/g%3E%3C/svg%3E");
+  --seal:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22 viewBox=%220 0 400 400%22%3E%3Cg fill=%22none%22 stroke=%22%23e4b551%22 stroke-opacity=%220.08%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M40 360 L360 40 M40 40 L360 360%22 stroke-width=%228%22/%3E%3Cpath d=%22M360 40 l-6 -26 l-14 20z M40 40 l26 -6 l-20 -14z M40 360 l-6 26 l20 -14z M360 360 l26 6 l-14 -20z%22 fill=%22%23e4b551%22 fill-opacity=%220.08%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22150%22 stroke-width=%227%22 fill=%22%23e4b551%22 fill-opacity=%220.020%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22136%22 stroke-width=%222%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2282%22 stroke-width=%223%22/%3E%3Cg stroke-width=%225%22%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%280%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%2890%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28180%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28270%29%22/%3E%3C/g%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2210%22 fill=%22%23e4b551%22 fill-opacity=%220.08%22/%3E%3C/g%3E%3Cdefs%3E%3Cpath id=%22r%22 d=%22M200 200 m-109 0 a109 109 0 1 1 218 0 a109 109 0 1 1 -218 0%22/%3E%3C/defs%3E%3Ctext fill=%22%23e4b551%22 fill-opacity=%220.08%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22700%22 letter-spacing=%221.6%22%3E%3CtextPath href=%22%23r%22%3E%D0%9E%D0%A0%D0%91%D2%B0%D0%9B%D0%90%D2%9A 1643 %C2%B7 %D0%9E%D0%A0%D0%94%D0%90%D0%91%D0%90%D0%A1%D0%AB 1726 %C2%B7 %D0%91%D2%B0%D0%9B%D0%90%D0%9D%D0%A2%D0%AB 1727 %C2%B7 %D0%90%D2%A2%D0%AB%D0%A0%D0%90%D2%9A%D0%90%D0%99 1730 %C2%B7 %3C/textPath%3E%3C/text%3E%3C/svg%3E");
+  --ok:#6cc08c; --bad:#e78579; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#160f0b; --paper:#221811; --ink:#f0e2cb; --muted:#b49c7f; --line:#3f2e21;
+  --accent:#e57c60; --on-accent:#1a0d08; --gold:#e4b551; --gold-soft:#3b2b12; --accent-soft:#3b1c14;
+  --pattern:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3CfeColorMatrix values=%220 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0%22/%3E%3C/filter%3E%3Crect width=%22240%22 height=%22240%22 filter=%22url%28%23n%29%22/%3E%3C/svg%3E");
+  --land:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221600%22 height=%22420%22 viewBox=%220 0 1600 420%22 preserveAspectRatio=%22xMidYMax slice%22%3E%3Ccircle cx=%221180%22 cy=%22200%22 r=%22120%22 fill=%22%23c0512f%22 opacity=%220.55%22/%3E%3Cpath d=%22M760 70 q24 -22 48 -6 q10 -6 18 0 q8 -6 18 0 q24 -16 48 6 q-30 -6 -48 4 l-9 10 l-9 -10 q-18 -10 -48 -4z%22 fill=%22%23070403%22 opacity=%22.55%22/%3E%3Cpath d=%22M0 230 L90 180 L170 205 L260 150 L330 175 L410 120 L480 160 L560 140 L640 185 L720 150 L800 190 L880 135 L960 170 L1040 128 L1120 175 L1200 150 L1290 190 L1370 145 L1460 180 L1540 150 L1600 170 V420 H0Z%22 fill=%22%233a2418%22 opacity=%220.9%22/%3E%3Cpath d=%22M410 120 L432 134 L446 130 L460 146 L436 142 L420 150 L404 138Z M1040 128 L1060 142 L1078 138 L1088 150 L1062 148 L1046 152 L1030 140Z M260 150 L276 162 L290 160 L300 170 L278 168 L262 172 L248 162Z%22 fill=%22%23fff%22 opacity=%220.81%22/%3E%3Cpath d=%22M0 262 C180 236 360 268 560 250 C760 232 900 262 1100 244 C1300 228 1460 252 1600 240 V420 H0Z%22 fill=%22%232a1a12%22/%3E%3Cg transform=%22translate%281040 232%29 scale%280.62 0.62%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281100 226%29 scale%280.66 0.66%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281165 230%29 scale%280.6 0.6%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281225 224%29 scale%280.64 0.64%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281290 229%29 scale%280.58 0.58%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%281350 233%29 scale%280.55 0.55%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28250 252%29 scale%28-0.5 0.5%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg transform=%22translate%28300 248%29 scale%28-0.52 0.52%29%22 fill=%22%23070403%22%3E%3Cpath d=%22M10 52 C8 40 26 34 48 36 C60 37 68 30 74 21 L79 12 L86 16 L85 25 C83 31 80 38 79 46 L84 56 L88 70 L83 71 L77 58 L74 52 C66 55 52 56 42 55 L36 64 L28 71 L24 69 L31 58 L30 55 C24 57 18 60 13 68 L8 67 L13 57 C6 58 0 56 -6 60 L-8 57 C-2 52 4 51 10 52 Z M44 37 L47 22 C48 17 55 16 57 21 L60 35 Z%22/%3E%3Ccircle cx=%2252%22 cy=%2212%22 r=%225.5%22/%3E%3Cpath d=%22M58 30 L72 -40%22 stroke=%22%23070403%22 stroke-width=%222.6%22/%3E%3Cpath d=%22M72 -40 L100 -32 L72 -22 Z%22/%3E%3Cpath d=%22M72 -40 l-3 -8 l6 0 z%22/%3E%3C/g%3E%3Cg fill=%22%23070403%22%3E%3Cpath d=%22M1418 250 L1418 150%22 stroke=%22%23070403%22 stroke-width=%223%22/%3E%3Cpath d=%22M1418 150 L1452 162 L1418 176Z%22/%3E%3Cpath d=%22M1414 150 h8 l-4 -10z%22/%3E%3Cpath d=%22M1418 176 q-6 10 0 20 q6 10 0 20%22 stroke=%22%23070403%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/g%3E%3Cpath d=%22M0 300 C220 282 420 312 700 296 C980 280 1240 306 1600 290 V420 H0Z%22 fill=%22%231d130d%22/%3E%3C/svg%3E");
+  --sky:linear-gradient(180deg,#3b1810 0%,#2a140e 30%,var(--bg) 70%);
+  --band:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2232%22 viewBox=%220 0 48 32%22%3E%3Crect width=%2248%22 height=%2232%22 fill=%22%234a160d%22/%3E%3Cg fill=%22none%22 stroke=%22%23e4b551%22 stroke-width=%222.4%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M24 30 V20 C24 10 12 8 10 15 C8 21 15 23 17 18 M24 20 C24 10 36 8 38 15 C40 21 33 23 31 18%22/%3E%3Cpath d=%22M24 6 V12%22/%3E%3Cpath d=%22M0 2 H48 M0 30 H48%22/%3E%3C/g%3E%3C/svg%3E");
+  --seal:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22 viewBox=%220 0 400 400%22%3E%3Cg fill=%22none%22 stroke=%22%23e4b551%22 stroke-opacity=%220.08%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M40 360 L360 40 M40 40 L360 360%22 stroke-width=%228%22/%3E%3Cpath d=%22M360 40 l-6 -26 l-14 20z M40 40 l26 -6 l-20 -14z M40 360 l-6 26 l20 -14z M360 360 l26 6 l-14 -20z%22 fill=%22%23e4b551%22 fill-opacity=%220.08%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22150%22 stroke-width=%227%22 fill=%22%23e4b551%22 fill-opacity=%220.020%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%22136%22 stroke-width=%222%22/%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2282%22 stroke-width=%223%22/%3E%3Cg stroke-width=%225%22%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%280%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%2890%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28180%29%22/%3E%3Cpath d=%22M0 0 V-20 C0 -32 -14 -36 -19 -28 C-23 -21 -15 -16 -12 -22 M0 -20 C0 -32 14 -36 19 -28 C23 -21 15 -16 12 -22%22 transform=%22translate%28200 200%29 rotate%28270%29%22/%3E%3C/g%3E%3Ccircle cx=%22200%22 cy=%22200%22 r=%2210%22 fill=%22%23e4b551%22 fill-opacity=%220.08%22/%3E%3C/g%3E%3Cdefs%3E%3Cpath id=%22r%22 d=%22M200 200 m-109 0 a109 109 0 1 1 218 0 a109 109 0 1 1 -218 0%22/%3E%3C/defs%3E%3Ctext fill=%22%23e4b551%22 fill-opacity=%220.08%22 font-family=%22Georgia,serif%22 font-size=%2217%22 font-weight=%22700%22 letter-spacing=%221.6%22%3E%3CtextPath href=%22%23r%22%3E%D0%9E%D0%A0%D0%91%D2%B0%D0%9B%D0%90%D2%9A 1643 %C2%B7 %D0%9E%D0%A0%D0%94%D0%90%D0%91%D0%90%D0%A1%D0%AB 1726 %C2%B7 %D0%91%D2%B0%D0%9B%D0%90%D0%9D%D0%A2%D0%AB 1727 %C2%B7 %D0%90%D2%A2%D0%AB%D0%A0%D0%90%D2%9A%D0%90%D0%99 1730 %C2%B7 %3C/textPath%3E%3C/text%3E%3C/svg%3E");
+  --ok:#6cc08c; --bad:#e78579; color-scheme:dark}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--pattern) repeat,radial-gradient(ellipse at 50% 30%,transparent 55%,color-mix(in srgb,var(--ink) 10%,transparent)),var(--land) no-repeat center bottom,var(--sky),var(--bg);background-size:240px 240px,100% 100%,max(1600px,100vw) auto,100% 100%,auto;background-attachment:fixed;color:var(--ink);font:400 1.06rem/1.6 var(--body);padding-inline:16px}
+.wrap{max-width:860px;margin:0 auto;padding-block:32px 64px;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h2{font-size:clamp(1.5rem,3.5vw,2rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0}
+.label{font:700 .74rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+section{display:flex;flex-direction:column;gap:18px;scroll-margin-top:72px}
+.lead{color:var(--muted);max-width:65ch}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* hero */
+header{display:flex;flex-direction:column;gap:18px;border-bottom:3px double var(--line);padding-bottom:28px}
+.toprow{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header h1{font-size:clamp(2.1rem,6.5vw,3.6rem);font-weight:800;letter-spacing:-.01em}
+header h1 .yr{color:var(--accent);font-variant-numeric:tabular-nums}
+.stamps{display:flex;flex-wrap:wrap;gap:12px}
+.stamp{font:400 .85rem/1.3 var(--mono);border:1.5px solid var(--gold);color:var(--gold);padding:8px 12px;border-radius:3px;background:none}
+.stamp:hover{background:var(--gold-soft)}
+.theme{background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:.88rem}
+.theme:hover{border-color:var(--accent)}
+.theme:disabled{opacity:.4;cursor:default}
+.tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.zv{font:400 .85rem var(--mono);color:var(--muted);min-width:3.4em;text-align:center;font-variant-numeric:tabular-nums}
+
+/* sticky nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px;overflow-x:auto}
+nav .in{max-width:860px;margin:0 auto;display:flex;gap:8px;width:max-content;min-width:100%}
+nav a{white-space:nowrap;font-size:.92rem;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+nav a:hover{border-color:var(--accent);color:var(--accent)}
+nav a.on{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:2px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 16px;color:var(--muted);font-weight:700}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
+.panel{background:var(--paper);border:1px solid var(--line);border-top:0;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.panel .date{font:400 .9rem var(--mono);color:var(--muted)}
+.panel ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--paper)}
+.panel .tbl{border:0;margin:-6px -8px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.97rem}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:700 .76rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--accent-soft)}
+tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}
+tbody tr:hover td{background:var(--accent-soft)}
+tbody tr.sel td{background:var(--gold-soft)}
+
+/* ladder */
+.ladder{display:flex;flex-direction:column;gap:10px}
+.step{background:var(--paper);border:1px solid var(--line)}
+.step:nth-child(2){margin-left:4%}.step:nth-child(3){margin-left:8%}.step:nth-child(4){margin-left:12%}
+.step>button{width:100%;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;text-align:left;background:none;border:0;padding:16px 18px;color:var(--ink)}
+.step>button:hover{background:var(--accent-soft)}
+.step .lvl{font:800 1.2rem var(--display);color:var(--accent)}
+.step .chev{font:400 1.3rem var(--mono);color:var(--muted);transition:transform .2s}
+.step>button[aria-expanded="true"] .chev{transform:rotate(45deg)}
+.step .more{padding:0 18px 16px 144px;display:flex;flex-direction:column;gap:6px;color:var(--ink)}
+.step .more ul{margin:0;padding-left:1.1em}
+.tag{display:inline-block;font:700 .72rem var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:2px;margin-right:6px}
+.tag.ru{background:var(--accent-soft);color:var(--accent)}
+.tag.kz{background:var(--gold-soft);color:var(--gold)}
+.size{font:400 .85rem var(--mono);color:var(--muted)}
+.ladder-ctl{display:flex;gap:8px;flex-wrap:wrap}
+.ghost{background:none;border:1px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:3px;font-size:.92rem}
+.ghost:hover{background:var(--accent);color:var(--on-accent)}
+@media (max-width:560px){.step>button{grid-template-columns:1fr auto;gap:6px}.step .lvl{grid-column:1/-1}.step:nth-child(n){margin-left:0}.step .more{padding-left:18px}}
+
+/* flip facts */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.fact{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);padding:16px;display:flex;flex-direction:column;gap:6px;text-align:left;color:var(--ink);min-height:132px}
+.fact:hover{border-color:var(--gold)}
+.fact .n{font:800 1.8rem var(--display);font-variant-numeric:tabular-nums}
+.fact .hint{font-size:.8rem;color:var(--muted);margin-top:auto}
+.fact p{color:var(--muted);font-size:.97rem}
+
+.callout{background:var(--gold-soft);padding:18px 20px;border-left:4px solid var(--gold);max-width:70ch}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.tl li{position:relative;padding-left:18px}
+.tl li::before{content:"";position:absolute;left:-7px;top:1em;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.tl li.key::before{background:var(--gold);border-color:var(--gold)}
+.tl button{background:none;border:0;color:var(--ink);text-align:left;padding:8px 10px;border-radius:3px;width:100%;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tl button:hover{background:var(--accent-soft)}
+.tl b{font:700 1rem var(--mono);color:var(--accent)}
+.tl .det{padding:2px 10px 10px;color:var(--muted);max-width:65ch}
+
+.results{display:flex;flex-direction:column;gap:10px;margin:0;padding-left:1.2em;max-width:70ch}
+
+.spk{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.spk-n{font:700 .85rem var(--body);background:var(--accent);color:var(--on-accent);padding:5px 12px;border-radius:999px}
+.speech{background:var(--accent-soft);border-left:4px solid var(--accent);padding:16px 20px;max-width:72ch}
+.speakers{display:flex;flex-direction:column;gap:10px}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.chip{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:10px 12px;border-radius:4px;font-size:.95rem}
+.chip:hover{border-color:var(--accent)}
+.chip b{font:800 1.1rem var(--display);color:var(--accent)}
+.page{display:flex;flex-direction:column;gap:56px}
+.page[hidden]{display:none!important}
+.pager{display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:20px}
+.pager button:disabled{opacity:.35;cursor:default}
+.pnum{font:400 .95rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.next{background:var(--accent);color:var(--on-accent);border:0;padding:10px 20px;border-radius:3px;font-weight:700}
+.next:hover{filter:brightness(1.08)}
+.home-go{align-self:flex-start;background:var(--accent);color:var(--on-accent);border:0;padding:12px 22px;border-radius:3px;font-weight:700;font-size:1rem}
+nav{background:var(--bg) var(--band) repeat-x left bottom;background-size:21px 14px;padding-bottom:24px;border-bottom:0}
+header{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:28px 24px 28px;margin-top:8px}
+header::before{content:"";position:absolute;left:0;right:0;top:0;height:20px;background:var(--band) repeat-x;background-size:30px 20px;border-radius:4px 4px 0 0}
+header>.toprow{margin-top:14px}
+footer{background:var(--band) repeat-x top;background-size:21px 14px;padding-top:28px!important;border-top:0!important}
+.lead,.results,.tl,.label,h2,.callout{position:relative}
+.lead,.results,.tl{background:color-mix(in srgb,var(--paper) 78%,transparent);border-radius:4px;padding:6px 10px;backdrop-filter:blur(2px)}
+body::after{content:"";position:fixed;right:-60px;top:90px;bottom:auto;width:min(360px,60vw);aspect-ratio:1;max-width:100%;background:var(--seal) center/contain no-repeat;transform:rotate(-14deg);pointer-events:none;z-index:-1}
+.mapbox{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.mapscroll{overflow-x:auto}
+.kzmap{display:block;width:100%;min-width:640px;height:auto}
+.maphint{display:none;font-size:.8rem;color:var(--muted)}
+@media (max-width:600px){.maphint{display:block}}
+.kzmap .ob{stroke:var(--paper);stroke-width:2;cursor:pointer;transition:filter .15s}
+.kzmap .ob:hover,.kzmap .ob:focus{filter:brightness(1.08) saturate(1.2);outline:none}
+.kzmap .ob.on{stroke:var(--ink);stroke-width:3}
+.g-dala{fill:color-mix(in srgb,var(--accent) 38%,var(--paper));background:color-mix(in srgb,var(--accent) 38%,var(--paper))}
+.g-turk{fill:color-mix(in srgb,var(--gold) 45%,var(--paper));background:color-mix(in srgb,var(--gold) 45%,var(--paper))}
+.g-iim{fill:color-mix(in srgb,var(--bad) 32%,var(--paper));background:color-mix(in srgb,var(--bad) 32%,var(--paper))}
+.kzmap .land-bg{fill:color-mix(in srgb,var(--muted) 10%,var(--paper))}
+.kzmap .water{fill:color-mix(in srgb,#4a90b8 30%,var(--paper));stroke:color-mix(in srgb,#4a90b8 55%,var(--paper));stroke-width:1}
+.kzmap .river{fill:none;stroke:color-mix(in srgb,#4a90b8 70%,var(--paper));stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.kzmap .kz-mod{fill:none;stroke:var(--ink);stroke-width:1.1;stroke-dasharray:4 3;stroke-opacity:.55;pointer-events:none}
+.kzmap .w-l{font-size:11px;font-style:italic;fill:color-mix(in srgb,#2b6f96 80%,var(--ink));text-anchor:middle}
+.kzmap .town{fill:var(--paper);stroke:var(--ink);stroke-width:1.2}
+.kzmap .town-l{font-size:10px;fill:var(--muted);paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+.kzmap .ob-x{fill:color-mix(in srgb,var(--muted) 18%,var(--paper));stroke:var(--paper);stroke-width:2}
+.kzmap .kz-out{fill:none;stroke:var(--ink);stroke-width:1.8;stroke-opacity:.75;pointer-events:none}
+.kzmap text{pointer-events:none;font-family:var(--body)}
+.kzmap .ob-l{font:800 17px var(--display);fill:var(--ink);text-anchor:middle}
+.kzmap .ob-s{font-size:11.5px;fill:var(--muted);text-anchor:middle;font-style:italic}
+.kzmap .city{fill:var(--ink);stroke:var(--paper);stroke-width:1.5}
+.kzmap .city-l{font-size:11.5px;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9rem}
+.legend span{display:flex;align-items:center;gap:8px}
+.sw{display:inline-block;width:16px;height:16px;border-radius:3px;border:1px solid var(--line)}
+.sw-line{border:0;border-top:2px dashed var(--ink);height:0;opacity:.6;width:22px;border-radius:0}
+.sw-c{width:9px;height:9px;border-radius:50%;background:var(--ink);border:0}
+.sw-t{width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.2px solid var(--ink)}
+.sw-x{background:color-mix(in srgb,var(--muted) 18%,var(--paper))}
+.mapinfo{font-weight:700;color:var(--accent)}
+.mapnote{font-size:.85rem;color:var(--muted)}
+.pres-btn{white-space:nowrap;font-size:.92rem;font-weight:700;background:var(--gold);color:var(--paper);border:0;padding:6px 14px;border-radius:999px}
+.pres-btn:hover{filter:brightness(1.08)}
+.start-row{display:flex;flex-wrap:wrap;gap:10px}
+.home-go.alt{background:var(--gold)}
+.pres-exit,.pres-hint{display:none}
+kbd{font:400 .75rem var(--mono);border:1px solid currentColor;border-radius:3px;padding:0 4px;opacity:.8}
+/* presentation mode */
+.present nav,.present footer,.present .tools,.present .spk-b,.present .speech,.present .maphint,.present .totop,.present #presOn2,.present .pnum{display:none!important}
+.present .wrap{max-width:1180px;padding-block:28px 96px;gap:40px}
+.present .page{gap:40px}
+.present body{padding-inline:clamp(16px,4vw,56px)}
+.present .pager{position:fixed;left:0;right:0;bottom:0;padding:10px clamp(16px,4vw,56px) calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(4px);border-top:1px solid var(--line);z-index:6}
+.present .pres-exit{display:inline-flex;align-items:center;gap:8px;position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:16px;z-index:7;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem;opacity:.55}
+.present .pres-exit:hover,.present .pres-exit:focus-visible{opacity:1}
+.present .pres-hint{display:block;position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:7;font-size:.85rem;color:var(--muted);pointer-events:none;transition:opacity .6s}
+.present .pres-hint.gone{opacity:0}
+.present .kzmap{min-width:0}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.flt{background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.92rem}
+.flt:hover{border-color:var(--accent)}
+.flt.on{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+#cmpTbl{min-width:680px}
+#cmpTbl td:first-child{width:16%}
+#cmpTbl td:nth-child(2){color:var(--muted)}
+#cmpTbl td:last-child{width:1%;white-space:nowrap}
+#cmpTbl tbody tr{cursor:default}
+#cmpTbl tbody tr:hover td{background:transparent}
+.pill{display:inline-block;font:700 .74rem var(--body);letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.p-ch{background:var(--accent-soft);color:var(--accent)}
+.p-st{background:color-mix(in srgb,var(--bad) 16%,var(--paper));color:var(--bad)}
+.p-kp{background:color-mix(in srgb,var(--muted) 16%,var(--paper));color:var(--muted)}
+/* animations */
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-22px)}to{opacity:1;transform:none}}
+@keyframes popIn{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.08)}100%{transform:scale(1)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes flipCard{0%{transform:perspective(600px) rotateY(0)}50%{transform:perspective(600px) rotateY(90deg)}100%{transform:perspective(600px) rotateY(0)}}
+@keyframes drawLine{from{stroke-dashoffset:var(--len,600)}to{stroke-dashoffset:0}}
+@keyframes sealIn{from{opacity:0;transform:rotate(-40deg) scale(1.3)}to{opacity:1;transform:rotate(-14deg) scale(1)}}
+@keyframes shimmer{from{background-position:0 0}to{background-position:60px 0}}
+.a-rise{animation:rise .55s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
+.a-slide{animation:slideIn .5s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*90ms)}
+.a-pop{animation:popIn .45s ease-out both;animation-delay:calc(var(--i,0)*40ms);transform-box:fill-box;transform-origin:center}
+.a-fade{animation:fadeIn .5s ease-out both;animation-delay:calc(var(--i,0)*110ms)}
+.a-draw{stroke-dasharray:var(--len,600);animation:drawLine 1.4s ease-out both;animation-delay:calc(var(--i,0)*120ms)}
+.flipping{animation:flipCard .45s ease-in-out}
+.panel:not([hidden]),.step .more:not([hidden]),.tl .det:not([hidden]),.speech:not([hidden]){animation:rise .35s ease-out both}
+body::after{animation:sealIn 1.2s cubic-bezier(.2,.7,.2,1) both}
+.fact,.chip,.step,.mapbox,.tbl{transition:transform .2s ease,box-shadow .2s ease,border-color .2s}
+.fact:hover,.chip:hover{transform:translateY(-3px);box-shadow:0 8px 18px -10px color-mix(in srgb,var(--ink) 45%,transparent)}
+.step:hover{transform:translateX(4px)}
+.next,.home-go,.pres-btn{transition:transform .15s,filter .15s}
+.next:hover,.home-go:hover,.pres-btn:hover{transform:translateY(-2px)}
+.next:active,.home-go:active,.pres-btn:active{transform:translateY(0) scale(.97)}
+nav{animation:shimmer 6s linear infinite}
+header::before{animation:shimmer 8s linear infinite}
+.yr{display:inline-block}
+@media (prefers-reduced-motion:reduce){
+  .a-rise,.a-slide,.a-pop,.a-fade,.a-draw,.flipping,nav,header::before,body::after,.panel,.step .more,.tl .det,.speech{animation:none!important}
+  .fact:hover,.chip:hover,.step:hover{transform:none}
+}
+.snd{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:8;display:flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 4px;box-shadow:0 6px 18px -10px color-mix(in srgb,var(--ink) 50%,transparent)}
+.snd-btn{display:flex;align-items:center;gap:8px;background:none;border:0;color:var(--ink);font-size:.88rem;padding:0}
+.snd-ic{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:1.05rem;transition:background .2s}
+.snd.on .snd-ic{background:var(--accent);color:var(--on-accent);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 45%,transparent)}50%{box-shadow:0 0 0 7px transparent}}
+.snd-vol{display:none}
+.snd.on .snd-vol{display:block}
+.snd-vol input{width:80px;accent-color:var(--accent)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:560px){.snd-t{display:none}.snd{padding:4px}.snd.on{padding-right:10px}}
+.present .snd{bottom:auto;top:calc(12px + env(safe-area-inset-top,0px));opacity:.6}
+.present .snd:hover,.present .snd.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.snd.on .snd-ic{animation:none}}
+.wrap{padding-bottom:80px}
+.kzmap .zone{stroke:var(--paper);stroke-width:1.5}
+.z-kishi{fill:color-mix(in srgb,#a64b33 32%,var(--paper));background:color-mix(in srgb,#a64b33 32%,var(--paper))}
+.z-orta{fill:color-mix(in srgb,#3d6a8f 36%,var(--paper));background:color-mix(in srgb,#3d6a8f 36%,var(--paper))}
+.z-uly{fill:color-mix(in srgb,var(--gold) 42%,var(--paper));background:color-mix(in srgb,var(--gold) 42%,var(--paper))}
+.z-dzh{fill:color-mix(in srgb,#3f4a3c 45%,var(--paper));background:color-mix(in srgb,#3f4a3c 45%,var(--paper))}
+.kzmap .occ{fill:url(#hatch);pointer-events:none}
+.kzmap .hatch-l{stroke:color-mix(in srgb,#3f4a3c 75%,var(--ink));stroke-width:2;stroke-opacity:.55}
+.sw-occ{background:repeating-linear-gradient(45deg,color-mix(in srgb,#3f4a3c 70%,var(--ink)) 0 2px,transparent 2px 6px)}
+.kzmap .bline-dz{fill:none;stroke:#7a1f12;stroke-width:2.2;stroke-dasharray:7 4}
+.kzmap .bl-l{font:italic 700 11px var(--body);fill:#7a1f12;text-anchor:middle}
+.kzmap .z-l{font:800 15px var(--display);fill:var(--ink);text-anchor:middle;opacity:.8}
+.kzmap .ob.bt{fill:#b5402a;stroke:#fff6e0;stroke-width:2;cursor:pointer}
+.kzmap .ob.bt-meet{fill:var(--gold)}
+.kzmap .ob.bt.on{stroke:var(--ink);stroke-width:3.5}
+.kzmap .bt-x{stroke:#fff6e0;stroke-width:2;stroke-linecap:round;pointer-events:none}
+.kzmap .bt-l{font:800 12.5px var(--body);fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.sw-bt{background:#b5402a;border-radius:50%!important}
+.sw-meet{background:var(--gold);transform:rotate(45deg);width:11px!important;height:11px!important}
+.totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--accent);color:var(--on-accent);border:0;width:44px;height:44px;border-radius:50%;font-size:1.2rem;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+footer{color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:18px}
+
+/* ===== Button style: cut-corner plaques with gold inner frame ===== */
+:root{--cut:7px}
+nav a,.pres-btn,.next,.ghost,.home-go,.theme,.flt,.chip,.snd,.totop{
+  border:0!important;border-radius:0!important;
+  clip-path:polygon(var(--cut) 0,calc(100% - var(--cut)) 0,100% var(--cut),100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,var(--cut) 100%,0 calc(100% - var(--cut)),0 var(--cut));
+  transition:background .2s,box-shadow .2s,color .2s,transform .12s,filter .2s;
+  letter-spacing:.02em
+}
+/* secondary */
+nav a,.ghost,.theme,.flt,.chip{
+  background:linear-gradient(180deg,var(--paper),color-mix(in srgb,var(--paper) 88%,var(--gold-soft)))!important;
+  color:var(--ink)!important;
+  box-shadow:inset 0 0 0 1px var(--line),inset 0 0 0 3px var(--paper),inset 0 0 0 4px color-mix(in srgb,var(--gold) 35%,transparent)!important
+}
+nav a:hover,.ghost:hover,.theme:hover,.flt:hover,.chip:hover{
+  color:var(--accent)!important;
+  box-shadow:inset 0 0 0 1px var(--accent),inset 0 0 0 3px var(--paper),inset 0 0 0 4px var(--gold)!important;
+  transform:translateY(-1px)
+}
+.ghost{color:var(--accent)!important;font-weight:700}
+/* primary (ink) */
+.next,.home-go,nav a.on,.flt.on{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 88%,#fff),var(--accent) 55%,color-mix(in srgb,var(--accent) 80%,#000))!important;
+  color:var(--on-accent)!important;font-weight:700;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 60%,#000),inset 0 0 0 3px var(--accent),inset 0 0 0 4px var(--gold),inset 0 1px 0 4px rgba(255,255,255,.12)!important
+}
+/* primary (gold) */
+.pres-btn,.home-go.alt{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--gold) 80%,#fff),var(--gold) 55%,color-mix(in srgb,var(--gold) 78%,#000))!important;
+  color:#fffaf0!important;font-weight:700;text-shadow:0 1px 0 rgba(0,0,0,.25);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gold) 60%,#000),inset 0 0 0 3px var(--gold),inset 0 0 0 4px #fff4d6!important
+}
+.next:hover,.home-go:hover,.pres-btn:hover,nav a.on:hover,.flt.on:hover{filter:brightness(1.1) saturate(1.1);transform:translateY(-2px)}
+nav a:active,.pres-btn:active,.next:active,.ghost:active,.home-go:active,.theme:active,.flt:active,.chip:active,.totop:active{transform:translateY(1px) scale(.98)}
+/* ornament marks on primary buttons */
+.next,.home-go,.pres-btn{position:relative;padding-inline:26px!important}
+.next::before,.next::after,.home-go::before,.home-go::after,.pres-btn::before,.pres-btn::after{content:"";position:absolute;top:50%;width:5px;height:5px;background:currentColor;opacity:.75;transform:translateY(-50%) rotate(45deg)}
+.next::before,.home-go::before,.pres-btn::before{left:10px}
+.next::after,.home-go::after,.pres-btn::after{right:10px}
+/* sizes */
+nav a{padding:7px 16px!important}
+.pres-btn{padding:7px 24px!important}
+.theme{padding:7px 14px!important}
+.flt{padding:7px 16px!important}
+.chip{padding:12px 14px!important}
+.home-go{padding:13px 28px!important}
+.next{padding:11px 26px!important}
+.ghost{padding:9px 16px!important}
+/* round controls → plaques */
+.totop{width:46px!important;height:46px!important;background:var(--accent)!important;color:var(--on-accent)!important;box-shadow:inset 0 0 0 3px var(--accent),inset 0 0 0 4px var(--gold)!important}
+.snd{background:var(--paper)!important;box-shadow:inset 0 0 0 1px var(--line),inset 0 0 0 3px var(--paper),inset 0 0 0 4px color-mix(in srgb,var(--gold) 40%,transparent)!important;padding:6px 14px 6px 6px!important}
+.snd-ic{border-radius:0!important;clip-path:polygon(5px 0,calc(100% - 5px) 0,100% 5px,100% calc(100% - 5px),calc(100% - 5px) 100%,5px 100%,0 calc(100% - 5px),0 5px)}
+.snd.on .snd-ic{animation:none}
+.pres-exit{border-radius:0!important;clip-path:polygon(6px 0,calc(100% - 6px) 0,100% 6px,100% calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,0 calc(100% - 6px),0 6px);border:0!important;box-shadow:inset 0 0 0 1px var(--line)}
+/* keyboard focus (outline is clipped, so draw it inside) */
+nav a:focus-visible,.pres-btn:focus-visible,.next:focus-visible,.ghost:focus-visible,.home-go:focus-visible,.theme:focus-visible,.flt:focus-visible,.chip:focus-visible,.totop:focus-visible{outline:none;box-shadow:inset 0 0 0 3px var(--ink),inset 0 0 0 5px var(--gold)!important}
+.pager button:disabled,.theme:disabled{opacity:.4;transform:none!important;filter:grayscale(.5)}
+@media (prefers-reduced-motion:reduce){nav a,.pres-btn,.next,.ghost,.home-go,.theme,.flt,.chip{transition:none}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Беттер"><div class="in">
+  <button type="button" class="pres-btn" id="presOn">▶ Презентация</button>
+  <a href="#home" data-page="0">Басты бет</a><a href="#docs" data-page="1">1 · Жоңғар хандығы</a><a href="#map" data-page="2">2 · Карта</a><a href="#ladder" data-page="3">3 · Ақтабан шұбырынды</a><a href="#court" data-page="4">4 · Ордабасы</a><a href="#land" data-page="5">5 · Аңырақай</a><a href="#timeline" data-page="6">6 · Батырлар</a>
+</div></nav>
+
+<div class="wrap">
+<div class="page" id="home">
+<header>
+  <div class="toprow">
+    <span class="label">Қазақстан тарихы · XVII–XVIII ғасырлар</span>
+    <div class="tools">
+      <button class="theme" id="zoomOut" type="button" aria-label="Кішірейту">A−</button>
+      <span class="zv" id="zoomVal">100%</span>
+      <button class="theme" id="zoomIn" type="button" aria-label="Үлкейту">A+</button>
+      <button class="theme" id="theme" type="button">Түнгі режим</button>
+    </div>
+  </div>
+  <h1>Қазақ–жоңғар қатынастары: <span class="yr">1635–1758</span></h1>
+  <p class="lead">Жоңғар хандығының құрылуынан оның құлауына дейінгі бір ғасырдан астам уақыт. Бұл бетте қазақ халқының жоңғар басқыншылығына қарсы күресі, ерлік шайқастары мен батырлары туралы айтылады.</p>
+  <div class="stamps">
+    <button class="stamp" type="button" data-go="t17">1643 · Орбұлақ шайқасы</button>
+    <button class="stamp" type="button" data-go="t18">1730 · Аңырақай шайқасы</button>
+  </div>
+  <div class="start-row"><button type="button" class="home-go" id="start">Баяндаманы бастау →</button><button type="button" class="home-go alt" id="presOn2">▶ Презентация режимі</button></div>
+  <div class="speakers"><span class="label">Баяндамашылар · 6 спикер</span><div class="chips"><a class="chip" href="#docs"><b>1</b> Жоңғар хандығы</a><a class="chip" href="#map"><b>2</b> Шайқастар картасы</a><a class="chip" href="#ladder"><b>3</b> Ақтабан шұбырынды</a><a class="chip" href="#court"><b>4</b> Ордабасы мен Бұланты</a><a class="chip" href="#land"><b>5</b> Аңырақай шайқасы</a><a class="chip" href="#timeline"><b>6</b> Батырлар мен нәтижелер</a></div></div>
+</header>
+</div>
+
+<div class="page">
+<section id="docs">
+  <div class="spk"><span class="spk-n">1-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>Құрметті тыңдаушылар! Біздің тақырыбымыз — қазақ–жоңғар қатынастары және жоңғарларға қарсы ерлік шайқастар. Жоңғарлар — батыс моңғолдар. Олар өздерін ойраттар деп атаған, ал түркі халықтары оларды қалмақ деп атады. 1635 жылы Батур қонтайшы ойрат тайпаларының басын біріктіріп, Жоңғар мемлекетінің негізін қалады. Осыдан бастап жоңғарлар қазақ жеріне жиі шабуыл жасай бастады. Жәңгір хан тұсында екі ел арасында үш ірі шайқас болды. 1635 жылғы алғашқы шайқаста Жәңгір тұтқынға түсіп, кейін қашып шықты. Ең атақтысы — 1643 жылғы Орбұлақ шайқасы. Батур қонтайшының 50 мың әскеріне Жәңгір хан бастаған 600 жауынгер қарсы тұрды. Жәңгір екі таудың арасындағы тар жырада ор қаздырып, өзі жауды ту сыртынан соқты. Қазақтар бұл шайқаста алғаш рет оқ ататын қару қолданды. Самарқан билеушісі Жалаңтөс батырдың 20 мың әскері көмекке келіп, жоңғарлар 10 мың әскерінен айырылды да, шегінуге мәжбүр болды. Алайда 1652 жылғы шайқаста Жәңгір хан қаза тапты.</p></div>
+  <span class="label">Жоңғар хандығы</span>
+  <h2>Шығыстағы қауіпті көрші</h2>
+  <div>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="twhy" aria-selected="true" aria-controls="pwhy">Жоңғарлар кім?</button>
+      <button role="tab" id="t17" aria-selected="false" aria-controls="p17">XVII ғасыр</button>
+      <button role="tab" id="t18" aria-selected="false" aria-controls="p18">XVIII ғ. басы</button>
+      <button role="tab" id="tcmp" aria-selected="false" aria-controls="pcmp">Салыстыру</button>
+    </div>
+    <div class="panel" role="tabpanel" id="pwhy" aria-labelledby="twhy">
+      <h3>Ойраттар, қалмақтар, жоңғарлар</h3>
+      <ul>
+        <li>«Қалмақ» — батыс моңғолдардың түркіше атауы. Олар өздерін ойраттар деп атаған.</li>
+        <li>Олар шығысында Хангай таулары, батысында Моғолстан, оңтүстігінде Гоби шөлі, солтүстігінде Ертіс пен Енисейдің жоғарғы ағысы аралығында көшіп жүрді.</li>
+        <li>1635 жылы Батур қонтайшы тайпалардың басын біріктіріп, Жоңғар мемлекетінің негізін қалады.</li>
+        <li>Негізгі тайпалары: торғауыттар, дербеттер, хойттар, чоростар, хошоуттар. Негізгі кәсібі — мал шаруашылығы.</li>
+        <li>Жайылымын кеңейтуді және оңтүстіктегі сауда-қолөнер қалаларын басып алуды көздеді.</li>
+      </ul>
+    </div>
+    <div class="panel" role="tabpanel" id="p17" aria-labelledby="t17" hidden>
+      <span class="date">1635–1697</span>
+      <h3>Жәңгір хан және Орбұлақ шайқасы</h3>
+      <ul>
+        <li>Жәңгір хан (1628–1652) тұсында жоңғарлармен үш ірі шайқас болды. 1635 жылы Жәңгір тұтқынға түсіп, қашып шықты.</li>
+        <li>1643 жылы Батур қонтайшы 50 мың әскермен басып кірді. Оған Жәңгір бастаған 600 жауынгер қарсы тұрды.</li>
+        <li>Жәңгір тар жырада ор қаздырып, жауды ту сыртынан соқты. Қазақтар алғаш рет оқ ататын қару қолданды.</li>
+        <li>Жалаңтөс батырдың 20 мың әскері көмекке келді, жоңғарлар 10 мың әскерінен айырылып шегінді.</li>
+        <li>1652 жылғы шайқаста Жәңгір хан қаза тапты. 1684 жылы Ғалдан Бошокту Сайрамды тонады.</li>
+      </ul>
+    </div>
+    <div class="panel" role="tabpanel" id="p18" aria-labelledby="t18" hidden>
+      <span class="date">1697–1730</span>
+      <h3>Цеван Рабдан және ұлы соғыс</h3>
+      <ul>
+        <li>1697–1727 жылдары билік құрған Цеван Рабдан тұсында қатынас барынша шиеленісті.</li>
+        <li>1710 жылы Қарақұмда Тәуке ханның бастамасымен үш жүздің жиыны өтті.</li>
+        <li>1718 жылы Тәуке хан қайтыс болып, хандық бытырады. Сол жылы Аягөз шайқасында қазақтар жеңілді.</li>
+        <li>1723 жылы «Ақтабан шұбырынды» басталды, 1726 жылы Ордабасыда үш жүз бірікті.</li>
+        <li>1727 жылы Бұланты, 1730 жылы Аңырақай шайқастарында қазақтар жеңіске жетті.</li>
+      </ul>
+    </div>
+    <div class="panel" role="tabpanel" id="pcmp" aria-labelledby="tcmp" hidden>
+      <div class="tbl"><table>
+        <thead><tr><th>Белгі</th><th>Қазақ хандығы</th><th>Жоңғар хандығы</th></tr></thead>
+        <tbody>
+          <tr><td>Құрылуы</td><td>1465 жыл</td><td>1635 жыл, Батур қонтайшы</td></tr>
+          <tr><td>Билеушілері</td><td>Жәңгір, Тәуке, Әбілқайыр, Сәмеке, Болат, Абылай</td><td>Батур, Ғалдан Бошокту, Цеван Рабдан, Қалдан Церен</td></tr>
+          <tr><td>XVIII ғ. басындағы жағдайы</td><td>Тәукеден кейін бытырап, үш жүзге бөлінді</td><td>Орталықтанған, біртұтас билік</td></tr>
+          <tr><td>Әскері</td><td>Жүздердің жасақтары, халық батырлары</td><td>Тұрақты әскер, 1723 жылы 70 мың</td></tr>
+          <tr><td>Тағдыры</td><td colspan="1">Тәуелсіздігін сақтап қалды</td><td>1756–1757 жылдары Цин империясы жойды</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="page">
+<section id="map">
+  <div class="spk"><span class="spk-n">2-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>Енді картаға назар аударайық. XVII ғасырдың соңында Ғалдан Бошокту қонтайшы оңтүстік Қазақстанға шабуыл жасап, 1684 жылы Сайрамды тонады. 1697 жылдан билік құрған Цеван Рабдан тұсында екі ел арасындағы қатынас барынша шиеленісті. Сондықтан 1710 жылы Қарақұмда Тәуке ханның бастамасымен үш жүздің жиыны өтіп, жауға қарсы тұруға шешім қабылданды. Бірақ 1718 жылы Тәуке хан қайтыс болған соң Қазақ хандығы бытырап, әр жүз өз ханын сайлады: Кіші жүзде Әбілқайыр, Орта жүзде Сәмеке, Ұлы жүзде Жолбарыс. Сол 1718 жылы Аягөз бойындағы үш күнге созылған шайқаста қазақтар жеңілді, себебі Әбілқайыр мен Қайып сұлтандар іс-қимылын келіспеді. Картада негізгі шайқас орындары белгіленген: Орбұлақ, Аягөз, Бұланты және Аңырақай. Сондай-ақ үш жүздің бас қосқан жері — Ордабасы көрсетілген. Штрихталған аймақ — 1723 жылдан кейін жоңғарлар басып алған жерлер.</p></div>
+  <span class="label">Шайқастар картасы</span>
+  <h2>Қай жерде соғысты?</h2>
+  <p class="lead">Картадағы шайқас белгісін немесе кестедегі қатарды басыңыз.</p>
+  <figure class="mapbox">
+    <span class="maphint">Картаны солға-оңға жылжытыңыз →</span>
+    <div class="mapscroll"><svg class="kzmap" viewBox="0 0 709.5 360.8" role="img" aria-label="Қазақ–жоңғар соғыстарының картасы"><defs><clipPath id="kzc"><path d="M45.6 220.0 L33.9 209.0 L26.5 193.6 L17.7 180.4 L20.6 165.0 L25.0 158.4 L22.1 143.0 L29.4 134.2 L42.7 127.6 L50.1 127.6 L60.4 116.6 L73.6 105.6 L81.0 103.4 L103.0 101.2 L120.7 110.0 L135.4 118.8 L151.6 127.6 L166.3 116.6 L182.5 121.0 L195.8 118.8 L210.5 129.8 L219.3 121.0 L237.0 123.2 L240.0 112.2 L216.4 99.0 L229.6 88.0 L228.2 81.4 L241.4 74.8 L231.1 66.0 L234.1 55.0 L253.2 55.0 L269.4 46.2 L292.9 44.0 L300.3 30.8 L337.1 30.8 L344.5 22.0 L360.7 22.0 L375.4 26.4 L381.3 39.6 L378.3 50.6 L396.0 50.6 L407.8 44.0 L418.1 61.6 L428.4 63.8 L456.3 46.2 L463.7 52.8 L460.8 61.6 L479.9 68.2 L510.8 112.2 L518.2 121.0 L532.9 123.2 L550.6 123.2 L560.9 118.8 L574.1 136.4 L584.4 140.8 L591.8 149.6 L608.0 145.2 L618.3 160.6 L610.9 171.6 L596.2 176.0 L591.8 206.8 L569.7 209.0 L555.0 202.4 L546.1 239.8 L538.8 244.2 L509.3 253.0 L518.2 272.8 L513.8 294.8 L499.0 299.2 L466.7 295.9 L446.0 299.2 L426.9 290.4 L415.1 305.8 L390.1 299.2 L378.3 310.2 L369.5 325.6 L353.3 330.0 L341.5 347.6 L334.2 338.8 L313.6 334.4 L304.7 316.8 L304.7 297.0 L290.0 281.6 L245.8 283.8 L231.1 264.0 L195.8 237.6 L195.8 237.6 L157.5 250.8 L157.5 332.2 L148.7 332.2 L131.0 310.2 L113.4 314.6 L107.5 319.0 L108.9 303.6 L92.7 292.6 L86.9 281.6 L82.4 259.6 L73.6 261.8 L75.1 253.0 L85.4 244.2 L98.6 242.0 L113.4 244.2 L114.8 228.8 L113.4 211.2 L95.7 209.0 L83.9 209.0 L61.8 222.2 Z"/></clipPath><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="transparent"/><path d="M0 0 V8" class="hatch-l"/></pattern></defs><rect width="709.5" height="360.8" class="land-bg"/><path d="M113.4 211.2 L114.8 228.8 L113.4 244.2 L98.6 242.0 L85.4 244.2 L75.1 253.0 L73.6 261.8 L82.4 259.6 L86.9 281.6 L92.7 292.6 L108.9 303.6 L107.5 319.0 L111.9 360.8 L63.3 360.8 L58.9 349.8 L48.6 321.2 L33.9 294.8 L25.0 259.6 L32.4 237.6 L45.6 220.0 L61.8 222.2 L83.9 209.0 L95.7 209.0 Z" class="water"/><path d="M555.0 202.4 L569.7 209.0 L591.8 206.8 L596.2 176.0 L610.9 171.6 L618.3 160.6 L635.9 151.8 L665.4 167.2 L694.8 200.2 L705.1 246.4 L687.5 286.0 L643.3 301.4 L599.1 308.0 L555.0 303.6 L515.2 308.0 L513.8 294.8 L518.2 272.8 L509.3 253.0 L538.8 244.2 L546.1 239.8 Z" class="zone z-dzh"><title>Жоңғар хандығы</title></path><g clip-path="url(#kzc)"><path d="M-19.1 -13.2 L240.0 -13.2 L240.0 114.4 L242.9 173.8 L250.3 215.6 L234.1 259.6 L231.1 360.8 L-19.1 360.8 Z" class="zone z-kishi"><title>Кіші жүз</title></path><path d="M240.0 -13.2 L790.5 -13.2 L790.5 360.8 L555.0 360.8 L544.7 237.6 L496.1 222.2 L422.5 235.4 L363.6 253.0 L312.1 259.6 L282.6 246.4 L250.3 215.6 L242.9 173.8 L240.0 114.4 Z" class="zone z-orta"><title>Орта жүз</title></path><path d="M250.3 215.6 L282.6 246.4 L312.1 259.6 L363.6 253.0 L422.5 235.4 L496.1 222.2 L544.7 237.6 L555.0 360.8 L231.1 360.8 L234.1 259.6 Z" class="zone z-uly"><title>Ұлы жүз</title></path><path d="M322.4 -13.2 L322.4 171.6 L363.6 198.0 L422.5 222.2 L413.7 259.6 L407.8 281.6 L387.2 303.6 L366.5 330.0 L348.9 360.8 L790.5 360.8 L790.5 -13.2 Z" class="occ"><title>1723–1730 жылдары жоңғарлар басып алған жерлер</title></path></g><path d="M45.6 220.0 L33.9 209.0 L26.5 193.6 L17.7 180.4 L20.6 165.0 L25.0 158.4 L22.1 143.0 L29.4 134.2 L42.7 127.6 L50.1 127.6 L60.4 116.6 L73.6 105.6 L81.0 103.4 L103.0 101.2 L120.7 110.0 L135.4 118.8 L151.6 127.6 L166.3 116.6 L182.5 121.0 L195.8 118.8 L210.5 129.8 L219.3 121.0 L237.0 123.2 L240.0 112.2 L216.4 99.0 L229.6 88.0 L228.2 81.4 L241.4 74.8 L231.1 66.0 L234.1 55.0 L253.2 55.0 L269.4 46.2 L292.9 44.0 L300.3 30.8 L337.1 30.8 L344.5 22.0 L360.7 22.0 L375.4 26.4 L381.3 39.6 L378.3 50.6 L396.0 50.6 L407.8 44.0 L418.1 61.6 L428.4 63.8 L456.3 46.2 L463.7 52.8 L460.8 61.6 L479.9 68.2 L510.8 112.2 L518.2 121.0 L532.9 123.2 L550.6 123.2 L560.9 118.8 L574.1 136.4 L584.4 140.8 L591.8 149.6 L608.0 145.2 L618.3 160.6 L610.9 171.6 L596.2 176.0 L591.8 206.8 L569.7 209.0 L555.0 202.4 L546.1 239.8 L538.8 244.2 L509.3 253.0 L518.2 272.8 L513.8 294.8 L499.0 299.2 L466.7 295.9 L446.0 299.2 L426.9 290.4 L415.1 305.8 L390.1 299.2 L378.3 310.2 L369.5 325.6 L353.3 330.0 L341.5 347.6 L334.2 338.8 L313.6 334.4 L304.7 316.8 L304.7 297.0 L290.0 281.6 L245.8 283.8 L231.1 264.0 L195.8 237.6 L195.8 237.6 L157.5 250.8 L157.5 332.2 L148.7 332.2 L131.0 310.2 L113.4 314.6 L107.5 319.0 L108.9 303.6 L92.7 292.6 L86.9 281.6 L82.4 259.6 L73.6 261.8 L75.1 253.0 L85.4 244.2 L98.6 242.0 L113.4 244.2 L114.8 228.8 L113.4 211.2 L95.7 209.0 L83.9 209.0 L61.8 222.2 Z" class="kz-out"/><path d="M343.0 345.4 L340.1 325.6 L334.2 303.6 L319.4 279.4 L297.4 254.1 L279.7 250.8 L259.1 242.0 L244.4 229.9" class="river"/><path d="M242.9 338.8 L225.2 319.0 L214.9 301.4 L210.5 283.8" class="river"/><path d="M569.7 184.8 L559.4 162.8 L549.1 141.9 L528.5 134.2 L514.5 132.0 L494.6 118.8 L466.7 90.2 L446.0 66.0 L426.9 46.2 L413.7 30.8 L412.2 0.0" class="river"/><path d="M144.3 101.2 L122.2 107.8 L101.6 110.0 L89.8 114.4 L88.3 136.4 L92.7 160.6 L97.2 187.0 L97.2 205.7" class="river"/><path d="M532.9 275.0 L510.8 275.0 L488.7 275.0 L469.6 272.8 L453.4 259.6 L440.2 242.0 L434.3 234.3" class="river"/><path d="M450.5 301.4 L437.2 294.8 L415.1 279.4 L393.0 266.2 L371.0 259.6 L348.9 253.0" class="river"/><path d="M282.6 41.8 L275.3 61.6 L269.4 70.4 L257.6 88.0 L253.2 105.6" class="river"/><path d="M407.8 118.8 L384.2 114.4 L363.6 105.6 L340.1 101.2 L348.9 74.8 L354.8 46.2 L351.8 19.8" class="river"/><path d="M191.4 239.8 L197.3 226.6 L207.6 220.0 L216.4 212.3 L229.6 213.4 L240.0 223.3 L242.9 239.8 L238.5 255.2 L231.1 268.4 L220.8 279.4 L207.6 283.8 L197.3 275.0 L189.9 257.4 Z" class="water"/><path d="M413.7 222.2 L421.0 212.3 L431.3 207.9 L446.0 210.1 L460.8 215.6 L475.5 220.0 L488.7 218.9 L499.0 215.6 L496.1 221.1 L484.3 227.7 L469.6 225.5 L454.9 221.1 L441.6 218.9 L431.3 222.2 L422.5 229.9 L416.6 231.0 Z" class="water"/><path d="M454.9 306.9 L465.2 300.3 L478.4 298.1 L487.3 302.5 L482.8 309.1 L471.1 311.3 L459.3 312.4 Z" class="water"/><path d="M530.0 220.0 L538.8 222.2 L541.7 231.0 L534.4 233.2 L528.5 228.8 Z" class="water"/><path d="M562.3 182.6 L575.6 180.4 L582.9 187.0 L572.6 189.2 L563.8 187.0 Z" class="water"/><path d="M322.4 19.8 L322.4 171.6 L363.6 198.0 L422.5 222.2 L413.7 259.6 L407.8 281.6 L387.2 303.6 L366.5 330.0" class="bline-dz"/><text x="57.4" y="272.8" class="w-l">Каспий теңізі</text><text x="216.4" y="245.3" class="w-l">Арал</text><text x="450.5" y="199.1" class="w-l">Балқаш</text><text x="471.1" y="321.2" class="w-l">Ыстықкөл</text><text x="128.1" y="171.6" class="z-l">Кіші жүз</text><text x="400.4" y="118.8" class="z-l">Орта жүз</text><text x="504.9" y="300.3" class="z-l">Ұлы жүз</text><text x="637.4" y="237.6" class="z-l">Жоңғар хандығы</text><text x="318.0" y="68.2" class="bl-l" transform="rotate(-90 318.0 68.2)">1723 ж. кейінгі шекара</text><circle cx="337.8" cy="288.2" r="2.4" class="town"/><text x="343.8" y="291.7" text-anchor="start" class="town-l">Түркістан</text><circle cx="359.9" cy="310.2" r="2.4" class="town"/><text x="365.9" y="313.7" text-anchor="start" class="town-l">Сайрам</text><circle cx="353.0" cy="332.0" r="2.4" class="town"/><text x="347.0" y="335.5" text-anchor="end" class="town-l">Ташкент</text><circle cx="333.4" cy="282.7" r="2.4" class="town"/><text x="327.4" y="286.2" text-anchor="end" class="town-l">Сауран</text><circle cx="490.2" cy="256.3" r="8.5" class="ob bt" data-ob="orbulak" tabindex="0"><title>1643 · Орбұлақ шайқасы · Жәңгір хан мен Жалаңтөс батыр Батур қонтайшының 50 мыңдық әскерін тоқтатты</title></circle><path d="M486.2 252.3 L494.2 260.3 M494.2 252.3 L486.2 260.3" class="bt-x"/><text x="502.2" y="260.8" text-anchor="start" class="bt-l">Орбұлақ</text><circle cx="516.7" cy="185.9" r="8.5" class="ob bt" data-ob="ayagoz" tabindex="0"><title>1718 · Аягөз шайқасы · үш күнге созылған ұрыста қазақ жасақтары жеңілді</title></circle><path d="M512.7 181.9 L520.7 189.9 M520.7 181.9 L512.7 189.9" class="bt-x"/><text x="528.7" y="190.4" text-anchor="start" class="bt-l">Аягөз</text><rect x="348.8" y="300.9" width="12" height="12" transform="rotate(45 354.8 306.9)" class="ob bt bt-meet" data-ob="ordabasy" tabindex="0"><title>1726 · Ордабасы құрылтайы · үш жүз бірігіп, Әбілқайыр бас қолбасшы болып сайланды</title></rect><text x="342.8" y="311.4" text-anchor="end" class="bt-l">Ордабасы</text><circle cx="313.6" cy="179.3" r="8.5" class="ob bt" data-ob="bulanty" tabindex="0"><title>1727–1728 · Бұланты (Қарасиыр) шайқасы · жоңғарлар ауыр жеңіліс тапты, жер «Қалмаққырылған» аталды</title></circle><path d="M309.6 175.3 L317.6 183.3 M317.6 175.3 L309.6 183.3" class="bt-x"/><text x="301.6" y="183.8" text-anchor="end" class="bt-l">Бұланты</text><circle cx="437.2" cy="269.5" r="8.5" class="ob bt" data-ob="anyrakai" tabindex="0"><title>1730 · Аңырақай шайқасы · Әбілқайыр бастаған 29 мыңдық қазақ қолының ұлы жеңісі</title></circle><path d="M433.2 265.5 L441.2 273.5 M441.2 265.5 L433.2 273.5" class="bt-x"/><text x="449.2" y="274.0" text-anchor="start" class="bt-l">Аңырақай</text></svg></div>
+    <figcaption>
+      <div class="legend">
+        <span><i class="sw z-kishi"></i>Кіші жүз</span>
+        <span><i class="sw z-orta"></i>Орта жүз</span>
+        <span><i class="sw z-uly"></i>Ұлы жүз</span>
+        <span><i class="sw z-dzh"></i>Жоңғар хандығы</span>
+        <span><i class="sw sw-occ"></i>1723 жылдан кейін басып алынған жер</span>
+        <span><i class="sw sw-bt"></i>Шайқас · <i class="sw sw-meet"></i>Құрылтай</span>
+      </div>
+      <p class="mapinfo" id="mapInfo" aria-live="polite">Шайқас белгісін басыңыз: ол кестеде де белгіленеді.</p>
+      <p class="mapnote">Схемалық карта. Жүздердің шекаралары мен шайқас орындары шамамен көрсетілген. 1723 жылдан кейін қазақ жері мен жоңғарлар арасындағы шекара Ұлытау, Балқаш көлі, Шу және Талас өзендері арқылы өтті.</p>
+    </figcaption>
+  </figure>
+  <div class="tbl">
+    <table id="mapTbl">
+      <thead><tr><th>Оқиға</th><th>Жылы</th><th>Қолбасшылар</th><th>Нәтижесі</th></tr></thead>
+      <tbody>
+        <tr data-ob="orbulak"><td><b>Орбұлақ шайқасы</b></td><td>1643</td><td>Жәңгір хан, Жалаңтөс батыр</td><td>600 сарбаз 50 мыңдық әскерді тоқтатты, жеңіс</td></tr>
+        <tr data-ob="ayagoz"><td><b>Аягөз шайқасы</b></td><td>1718</td><td>Әбілқайыр, Қайып сұлтандар</td><td>Іс-қимыл келісілмей, жеңіліс</td></tr>
+        <tr data-ob="ordabasy"><td><b>Ордабасы құрылтайы</b></td><td>1726</td><td>Әбілқайыр, Әбілмәмбет, Сәмеке; Төле, Қазыбек, Әйтеке</td><td>Үш жүз бірікті, бас қолбасшы сайланды</td></tr>
+        <tr data-ob="bulanty"><td><b>Бұланты (Қарасиыр)</b></td><td>1727</td><td>Әбілқайыр, Бөгенбай</td><td>Ірі жеңіс, «Қалмаққырылған»</td></tr>
+        <tr data-ob="anyrakai"><td><b>Аңырақай шайқасы</b></td><td>1730</td><td>Әбілқайыр, Әбілмәмбет, Бөгенбай, Қабанбай</td><td>Ұлы жеңіс</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div>
+
+<div class="page">
+<section id="ladder">
+  <div class="spk"><span class="spk-n">3-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>1722 жылы Цин императоры Канси қайтыс болған соң, Цеван Рабдан бар күшін Қазақ хандығына қарсы бағыттады. 1723 жылдың көктемінде 70 мың жоңғар әскері жеті бағыттан қазақ жеріне тұтқиылдан басып кірді. Дайындалмаған халық үйін, малын тастап, босып кетуге мәжбүр болды. Ұлы және Орта жүз қазақтарының басым бөлігі Ходжент пен Самарқанға, Кіші жүз Хиуа мен Бұхараға қарай ауды. Бұл қасіретті кезең «Ақтабан шұбырынды, Алқакөл сұлама» деп аталады. Кіші жүз ішінде ол «Сауран айналған» деген атпен де белгілі. Халықтың сол кездегі мұң-зарын «Елім-ай» әні жеткізеді. Демограф М. Тәтімовтің есебі бойынша қазақ халқының саны 1723 жылы 3 миллион 330 мың болса, 1725 жылы 2 миллион 222 мыңға дейін азайған. Соған қарамастан халық рухы сынбады: Ташкент тұрғындары қаланы үш ай бойы қорғады, Сайрам мен Түркістан да табанды қарсылық көрсетті.</p></div>
+  <span class="label">1723–1727</span>
+  <h2>«Ақтабан шұбырынды, Алқакөл сұлама»</h2>
+  <p class="lead">Әр кезеңді басып, толығырақ оқыңыз.</p>
+  <div class="ladder-ctl"><button class="ghost" type="button" id="openAll">Барлығын ашу</button><button class="ghost" type="button" id="closeAll">Барлығын жабу</button></div>
+  <div class="ladder">
+    <div class="step"><button type="button" aria-expanded="true"><span class="lvl">Себебі</span><span><span class="tag ru">1722</span><b>Цин–жоңғар бітімі</b></span><span class="chev">+</span></button>
+      <div class="more"><ul><li>1715–1722 жылдары жоңғарлардың негізгі күші Цин империясымен соғысып жатты.</li><li>1722 жылы император Канси қайтыс болып, Цеван Рабдан бар күшін қазақтарға бағыттады.</li><li>Тәукеден кейінгі бытыраңқылық жауға қолайлы сәт туғызды.</li></ul></div></div>
+    <div class="step"><button type="button" aria-expanded="false"><span class="lvl">Шабуыл</span><span><span class="tag ru">1723 көктем</span><b>70 мың әскер, жеті бағыт</b></span><span class="chev">+</span></button>
+      <div class="more" hidden><ul><li>Қалдан Церен Балқаш пен Қаратауға, Амурсана Нұра өзеніне қарай жылжыды.</li><li>Басқа қолдар Алтай, Көктал, Шелек, Ыстықкөл, Шу, Іле бағыттарымен басып кірді.</li><li>Бас қолбасшы — Цеван Рабданның інісі Шона Даба.</li></ul></div></div>
+    <div class="step"><button type="button" aria-expanded="false"><span class="lvl">Босқын</span><span><span class="tag kz">Халық</span><b>Ақтабан шұбырынды</b></span><span class="chev">+</span></button>
+      <div class="more" hidden><ul><li>Ұлы және Орта жүз Ходжент пен Самарқанға, Кіші жүз Хиуа мен Бұхараға ауды.</li><li>Кіші жүзде бұл оқиға «Сауран айналған» деп аталды.</li><li>Халықтың мұң-зарын «Елім-ай» әні жеткізеді.</li></ul></div></div>
+    <div class="step"><button type="button" aria-expanded="false"><span class="lvl">Қарсылық</span><span><span class="tag kz">Қалалар</span><b>Ташкент, Сайрам, Түркістан</b></span><span class="chev">+</span></button>
+      <div class="more" hidden><ul><li>Ташкенттің 300 мың тұрғыны қаланы үш ай бойы ұстап тұрды.</li><li>Түркістан қорғанысына Қабанбай мен Айшыбек батырлар қатысты.</li><li>Жоңғарлар Сайрамсу мен Тұбалақ өзендерінің арнасын бұрып, қаланы сусыз қалдырды.</li></ul></div></div>
+  </div>
+  <p class="callout">М. Тәтімовтің есебі бойынша қазақ халқының саны 1723 жылы 3 млн 330 мың болса, 1725 жылы 2 млн 222 мыңға азайды. Шәкәрім Құдайбердіұлы бұл жылдары халықтың үштен екісі кеміді деп жазды.</p>
+</section>
+</div>
+
+<div class="page">
+<section id="court">
+  <div class="spk"><span class="spk-n">4-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>Жаппай қарсылық 1724 жылы басталды. 1725 жылы Әбілқайыр қолындағы сарбаздар саны 50 мыңға жетіп, Отырар, Шымкент, Түркістан, Сайрам маңы жаудан азат етіле бастады. 1726 жылы Қаратаудың оңтүстік беткейіндегі Ордабасы деген жерде үш жүздің өкілдері бас қосты. Оған Әбілқайыр, Әбілмәмбет, Сәмеке, Төле, Қазыбек, Әйтеке билер мен батырлар қатысты. Жиын жауға қарсы біріккен майдан құрып, Әбілқайыр ханды бас қолбасшы, Қанжығалы Бөгенбайды сардарбек етіп сайлады. 1727 жылдың күзінде Сарыарқадағы Бұланты өзенінің маңында жауға үлкен соққы берілді. Шайқас болған жазық Қарасиыр деп аталады, ал шайқас болған өңір «Қалмаққырылған» атанды. Бұл жеңіс қазақ жасақтарының өз күшіне деген сенімін арттырды.</p></div>
+  <span class="label">1724–1728</span>
+  <h2>Ордабасы құрылтайы және Бұланты жеңісі</h2>
+  <p class="lead">Карточканы басып, түсіндірмесін ашыңыз.</p>
+  <div class="facts">
+    <button class="fact" type="button" data-back="1725 жылы Әбілқайыр қолындағы сарбаздар саны. Отырар, Шымкент, Түркістан, Сайрам маңы азат етіле бастады."><span class="n">50 мың</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Қаратаудың оңтүстік беткейіндегі Ордабасыда үш жүздің хандары, билері мен батырлары бас қосты."><span class="n">1726</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Ордабасыда бүкіл қазақ жасағының бас қолбасшысы болып Әбілқайыр хан сайланды."><span class="n">Бас қолбасшы</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Қазақ қолының сардарбегі болып Қанжығалы Бөгенбай батыр сайланды."><span class="n">Сардарбек</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="1727 жылы күзде Сарыарқадағы Бұланты өзені маңында жауға үлкен соққы берілген жазық."><span class="n">Қарасиыр</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Жоңғарлар жеңіліс тапқан өңірге халық берген атау. Бұл жеңіс халықтың рухын көтерді."><span class="n">Қалмаққырылған</span><span class="hint">Басыңыз</span></button>
+  </div>
+  <p class="callout">Ордабасыға Әбілқайыр, Әбілмәмбет, Сәмеке, Күшік, Жолбарыс сұлтандар, Төле, Қазыбек, Әйтеке билер мен батырлар келді. Олар жауға қарсы біріккен майдан құруға шешім қабылдады.</p>
+</section>
+</div>
+
+<div class="page">
+<section id="land">
+  <div class="spk"><span class="spk-n">5-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>Жоңғарларға қарсы соғыстағы ең маңызды шайқас — 1730 жылғы Аңырақай шайқасы. Ол Балқаштың оңтүстік-батысында өтіп, 200 шақырымға созылды. Қазақ әскерінің саны 29 мың, жоңғарлардікі 28–30 мың болды. Сол қанатты Әбілмәмбет хан, Сәмеке сұлтан, Қазыбек би және Қабанбай батыр, оң қанатты Төле би, Саңырық пен Қойгелді батырлар, орталықты Әбілқайыр, Әйтеке би, Бөгенбай мен Шақшақ Жәнібек басқарды. Шайқас жекпе-жектен басталды: жоңғарлардан атақты Шарыш батыр, қазақтардан жас Сабалақ шықты. Сабалақ атасы Абылайдың аруағына сиынып, атын ұран етіп, жекпе-жекте жеңді. Осыдан кейін ол Абылай атанды. Бұл шайқаста Қабанбай, Наурызбай, Райымбек, Есет және басқа батырлар ерлік көрсетті. Бұқар, Ақтамберді, Үмбетей жыраулар батырлардың ерлігін жырға қосты.</p></div>
+  <span class="label">1730</span>
+  <h2>Аңырақай шайқасы</h2>
+  <p class="lead">Балқаштың оңтүстік-батысында өткен, 200 шақырымға созылған шешуші шайқас. Карточканы басыңыз.</p>
+  <div class="facts">
+    <button class="fact" type="button" data-back="Аңырақайға аттанған қазақ әскерінің жалпы саны. Мыңдықтарды 29 батыр басқарды."><span class="n">29 мың</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Жоңғар әскерінің саны. Олар да шайқасқа жан-жақты дайындалған еді."><span class="n">28–30 мың</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Әбілмәмбет хан, Сәмеке сұлтан, Қазыбек би және Қабанбай батыр басқарды."><span class="n">Сол қанат</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Төле би, Саңырық, Қойгелді, Қосын, Шінет, Мәмбет, Сәңкібай, Шойбек батырлар басқарды."><span class="n">Оң қанат</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Әбілқайыр хан, Әйтеке би, Бөгенбай және Шақшақ Жәнібек батырлар басқарды. Жалпы қолбасшы — Әбілқайыр."><span class="n">Орталық</span><span class="hint">Басыңыз</span></button>
+    <button class="fact" type="button" data-back="Жоңғардың Шарыш батырын жас Сабалақ жеңді. Ол атасы Абылайдың атын ұран етті, содан Абылай атанды."><span class="n">Жекпе-жек</span><span class="hint">Басыңыз</span></button>
+  </div>
+  <p class="callout">1997 жылы Ә. Кекілбаев пен М. Қозыбаев бастаған экспедиция шайқас болған жерді зерттеп, сарбаздардың қару-жарағы мен ер-тұрмандарын тапты. Халық аңызы бойынша жоңғарлар осы жерде «аңырап» жеңілген.</p>
+</section>
+</div>
+
+<div class="page">
+<section id="timeline">
+  <div class="spk"><span class="spk-n">6-спикер</span><button type="button" class="ghost spk-b" aria-expanded="false">Сөйлеу мәтіні</button></div>
+  <div class="speech" hidden><p>Өкінішке қарай, Аңырақай жеңісі жалғасын таппады. Ұлы хан Болат қайтыс болып, билік үшін талас басталды. Әбілқайыр мен Сәмеке майдан даласын тастап кетті, ал жоңғарлар қайтадан шабуыл жасады. 1741 жылы Абылай сұлтан жоңғарлардың қолына тұтқынға түсіп, 1743 жылы елге оралды. XVIII ғасырдың 50-жылдары Жоңғар мемлекеті әлсіреп, 1756–1757 жылдары Цин империясы оны жойды. Абылай Ресей және Қытаймен дипломатиялық қатынас орнатып, Алтай мен Тарбағатайдағы қазақ қоныстарын қайтарды. Қорыта айтқанда, жоңғарларға қарсы күрес қазақ халқының бірлігі мен ерлігін көрсетті. Қабанбай, Бөгенбай, Шақшақ Жәнібек батырлардың есімдері ұранға айналды. Бұл тарихтың басты сабағы: ел біріксе ғана жеңеді. Назар аударғандарыңызға рахмет!</p></div>
+  <span class="label">Хронология</span>
+  <h2>Бір ғасырлық күрес</h2>
+  <p class="lead">Жылды басып, оқиғаны ашыңыз.</p>
+  <ol class="tl">
+    <li><button type="button" aria-expanded="false"><b>1635</b>Жоңғар хандығы құрылды</button><p class="det" hidden>Батур қонтайшы ойрат тайпаларын біріктірді. Сол жылы Жәңгір тұтқынға түсіп, қашып шықты.</p></li>
+    <li class="key"><button type="button" aria-expanded="false"><b>1643</b>Орбұлақ шайқасы</button><p class="det" hidden>Жәңгір хан мен Жалаңтөс батыр жоңғарларды жеңді.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1652</b>Жәңгір ханның қазасы</button><p class="det" hidden>Батур қонтайшымен шайқаста Жәңгір хан қаза тапты.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1710</b>Қарақұм жиыны</button><p class="det" hidden>Тәуке ханның бастамасымен үш жүз жауға қарсы тұруға шешті.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1718</b>Аягөз шайқасы</button><p class="det" hidden>Тәуке хан қайтыс болды, Аягөз бойында қазақтар жеңілді.</p></li>
+    <li class="key"><button type="button" aria-expanded="false"><b>1723</b>Ақтабан шұбырынды</button><p class="det" hidden>70 мың жоңғар әскері жеті бағыттан басып кірді.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1726</b>Ордабасы</button><p class="det" hidden>Үш жүз бірікті, Әбілқайыр бас қолбасшы болды.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1727</b>Бұланты шайқасы</button><p class="det" hidden>Қарасиыр жазығында жоңғарлар ауыр жеңіліс тапты.</p></li>
+    <li class="key"><button type="button" aria-expanded="false"><b>1730</b>Аңырақай шайқасы</button><p class="det" hidden>Қазақ қолының ұлы жеңісі. Сабалақ Абылай атанды.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1741–1743</b>Абылай тұтқында</button><p class="det" hidden>Абылай жоңғар тұтқынында болып, 1743 жылы 5 қыркүйекте елге оралды.</p></li>
+    <li><button type="button" aria-expanded="false"><b>1756–1757</b>Жоңғар хандығының құлауы</button><p class="det" hidden>Цин империясы Жоңғар мемлекетін жойды. Қазақтар ата-мекендеріне орала бастады.</p></li>
+  </ol>
+</section>
+
+<section id="compare">
+  <span class="label">6-спикер · Батырлар</span>
+  <h2>Ел қорғаған батырлар</h2>
+  <p class="lead">Сүзгіні басып, жүз бойынша көрсетіңіз.</p>
+  <div class="filters" role="group" aria-label="Сүзгі">
+    <button type="button" class="flt on" data-f="all">Барлығы</button>
+    <button type="button" class="flt" data-f="kp">Ұлы жүз</button>
+    <button type="button" class="flt" data-f="ch">Орта жүз</button>
+    <button type="button" class="flt" data-f="st">Кіші жүз</button>
+  </div>
+  <div class="tbl">
+    <table id="cmpTbl">
+      <thead><tr><th>Батыр</th><th>Жүзі</th><th>Ерлігі</th><th>Белгі</th></tr></thead>
+      <tbody><tr data-k="ch"><td><b>Қанжығалы Бөгенбай</b></td><td>Орта жүз</td><td>Ордабасыда сардарбек болып сайланды, Бұланты мен Аңырақайда орталықты басқарды</td><td><span class="pill p-ch">Орта жүз</span></td></tr><tr data-k="ch"><td><b>Қаракерей Қабанбай</b></td><td>Орта жүз</td><td>Түркістан қорғанысына қатысты, Аңырақайда сол қанатта соғысты</td><td><span class="pill p-ch">Орта жүз</span></td></tr><tr data-k="ch"><td><b>Шақшақ Жәнібек</b></td><td>Орта жүз</td><td>1725 жылы Шұбаркөл маңында жоңғарларды талқандады</td><td><span class="pill p-ch">Орта жүз</span></td></tr><tr data-k="ch"><td><b>Абылай (Сабалақ)</b></td><td>Орта жүз</td><td>Аңырақайда Шарыш батырды жекпе-жекте жеңді, кейін хан болды</td><td><span class="pill p-ch">Орта жүз</span></td></tr><tr data-k="ch"><td><b>Малайсары</b></td><td>Орта жүз</td><td>Бұланты шайқасында ерлік көрсетті</td><td><span class="pill p-ch">Орта жүз</span></td></tr><tr data-k="st"><td><b>Әбілқайыр хан</b></td><td>Кіші жүз</td><td>Ордабасыда бас қолбасшы болып сайланды, Аңырақайда жалпы қолбасшылықты жүргізді</td><td><span class="pill p-st">Кіші жүз</span></td></tr><tr data-k="st"><td><b>Тама Есет</b></td><td>Кіші жүз</td><td>Ақтасты маңындағы «Қалмаққырылған» шайқасына және Аңырақайға қатысты</td><td><span class="pill p-st">Кіші жүз</span></td></tr><tr data-k="st"><td><b>Тама Тайлақ</b></td><td>Кіші жүз</td><td>Бұланты шайқасында өз қолын бастады</td><td><span class="pill p-st">Кіші жүз</span></td></tr><tr data-k="kp"><td><b>Ошақты Саңырық</b></td><td>Ұлы жүз</td><td>Аңырақайда оң қанатта соғысты</td><td><span class="pill p-kp">Ұлы жүз</span></td></tr><tr data-k="kp"><td><b>Шапырашты Наурызбай</b></td><td>Ұлы жүз</td><td>Аңырақай шайқасының алдыңғы шебінде болды</td><td><span class="pill p-kp">Ұлы жүз</span></td></tr><tr data-k="kp"><td><b>Райымбек</b></td><td>Ұлы жүз</td><td>Аңырақай шайқасында ерлік көрсетті</td><td><span class="pill p-kp">Ұлы жүз</span></td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="results">
+  <span class="label">6-спикер · Нәтижелері мен маңызы</span>
+  <h2>Күрестің қорытындысы</h2>
+  <ul class="results">
+    <li>Қазақ халқы өз мемлекетінің тәуелсіздігін сақтап қалды.</li>
+    <li>Үш жүз біріккенде ғана жеңетіні дәлелденді. Ордабасы мен Аңырақай — бірліктің символы.</li>
+    <li>Билік үшін талас Аңырақай жеңісін жалғастыруға кедергі болып, жоңғар қаупі сақталды.</li>
+    <li>Халық саны күрт азайып, оңтүстік қалалар мен Жетісудың жайылымдары уақытша қолдан кетті.</li>
+    <li>Сыртқы қауіп Әбілқайырды 1730 жылы Ресейден одақтас іздеуге итермеледі.</li>
+    <li>Батырлар ерлігі «Қабанбай батыр», «Бөгенбай батыр» сияқты жырларда мәңгі қалды, олардың есімдері ұранға айналды.</li>
+  </ul>
+</section>
+</div>
+
+<div class="pager">
+  <button type="button" class="ghost" id="prev">← Алдыңғы</button>
+  <span class="pnum" id="pnum">1 / 7</span>
+  <button type="button" class="next" id="next">Келесі →</button>
+</div>
+
+</div>
+
+<button type="button" class="pres-exit" id="presOff" aria-label="Презентациядан шығу">✕ Шығу <kbd>Esc</kbd></button>
+<div class="pres-hint" id="presHint">← → беттерді ауыстыру · Esc шығу</div>
+
+<div class="snd" id="snd">
+  <button type="button" class="snd-btn" id="sndBtn" aria-pressed="false" title="Фон дыбысы"><span class="snd-ic" aria-hidden="true">♪</span><span class="snd-t">Фон дыбысы</span></button>
+  <label class="snd-vol" for="sndVol"><span class="vh">Дыбыс деңгейі</span><input type="range" id="sndVol" min="0" max="100" value="45"></label>
+</div>
+
+<button class="totop" id="totop" type="button" aria-label="Жоғарыға" hidden>↑</button>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+
+/* theme */
+const root=document.documentElement, tbtn=$("#theme");
+function isDark(){const t=root.getAttribute("data-theme");return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+function setLabel(){tbtn.textContent=isDark()?"Күндізгі режим":"Түнгі режим"}
+tbtn.addEventListener("click",()=>{root.setAttribute("data-theme",isDark()?"light":"dark");setLabel()});
+setLabel();
+
+/* zoom */
+const Z=[85,100,115,130,150];let zi=1;
+try{const v=+localStorage.getItem("zoom");if(Z.includes(v))zi=Z.indexOf(v)}catch(e){}
+function applyZoom(){root.style.fontSize=(root.classList.contains("present")?Math.round(Z[zi]*1.3):Z[zi])+"%";$("#zoomVal").textContent=Z[zi]+"%";$("#zoomOut").disabled=zi===0;$("#zoomIn").disabled=zi===Z.length-1;try{localStorage.setItem("zoom",Z[zi])}catch(e){}}
+$("#zoomIn").addEventListener("click",()=>{if(zi<Z.length-1){zi++;applyZoom()}});
+$("#zoomOut").addEventListener("click",()=>{if(zi>0){zi--;applyZoom()}});
+applyZoom();
+
+/* tabs */
+const tabs=$$('[role="tab"]');
+function selectTab(id){tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);document.getElementById(t.getAttribute("aria-controls")).hidden=!on})}
+tabs.forEach(t=>t.addEventListener("click",()=>selectTab(t.id)));
+$$("[data-go]").forEach(b=>b.addEventListener("click",()=>{selectTab(b.dataset.go);goTo("docs")}));
+
+/* table rows */
+/* map + table link */
+const obs=$$(".kzmap .ob"), rows=$$("#mapTbl tbody tr");
+function pickOb(k){
+  const was=obs.find(o=>o.dataset.ob===k&&o.classList.contains("on"));
+  obs.forEach(o=>o.classList.toggle("on",!was&&o.dataset.ob===k));
+  rows.forEach(r=>r.classList.toggle("sel",!was&&r.dataset.ob===k));
+  const o=obs.find(o=>o.dataset.ob===k);
+  if(o)o.classList.remove("a-fade");
+  if(!was&&o&&!o.classList.contains("bt"))o.parentNode.appendChild(o);
+  $("#mapInfo").textContent=was?"Шайқас белгісін басыңыз: ол кестеде де белгіленеді.":o.querySelector("title").textContent;
+}
+obs.forEach(o=>{o.addEventListener("click",()=>pickOb(o.dataset.ob));o.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pickOb(o.dataset.ob)}})});
+rows.forEach(r=>r.addEventListener("click",()=>pickOb(r.dataset.ob)));
+
+/* ladder accordion */
+function setStep(btn,open){btn.setAttribute("aria-expanded",open);btn.nextElementSibling.hidden=!open}
+$$(".step>button").forEach(b=>b.addEventListener("click",()=>setStep(b,b.getAttribute("aria-expanded")!=="true")));
+$("#openAll").addEventListener("click",()=>$$(".step>button").forEach(b=>setStep(b,true)));
+$("#closeAll").addEventListener("click",()=>$$(".step>button").forEach(b=>setStep(b,false)));
+
+/* flip facts */
+$$(".fact").forEach(f=>{
+  const front=f.innerHTML;
+  f.addEventListener("click",()=>{
+    if(!RM){f.classList.remove("flipping");void f.offsetWidth;f.classList.add("flipping")}
+    if(f.dataset.flip){f.innerHTML=front;delete f.dataset.flip}
+    else{f.innerHTML='<span class="n">'+f.querySelector(".n").textContent+'</span><p>'+f.dataset.back+'</p><span class="hint">Қайта басу — жабу</span>';f.dataset.flip=1}
+  });
+});
+
+/* timeline */
+$$(".tl button").forEach(b=>b.addEventListener("click",()=>{const o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",o);b.nextElementSibling.hidden=!o}));
+
+/* speeches */
+$$(".spk-b").forEach(b=>b.addEventListener("click",()=>{const o=b.getAttribute("aria-expanded")!=="true";b.setAttribute("aria-expanded",o);b.textContent=o?"Мәтінді жабу":"Сөйлеу мәтіні";b.parentElement.nextElementSibling.hidden=!o}));
+
+/* compare filter */
+$$(".flt").forEach(b=>b.addEventListener("click",()=>{
+  $$(".flt").forEach(x=>x.classList.toggle("on",x===b));
+  let n=0;$$("#cmpTbl tbody tr").forEach(r=>{r.hidden=!(b.dataset.f==="all"||r.dataset.k===b.dataset.f);if(!r.hidden&&!RM){r.classList.remove("a-rise");void r.offsetWidth;r.style.setProperty("--i",n++);r.classList.add("a-rise")}});
+}));
+
+/* animations */
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ANIM=[
+ [".label, h1, h2, .lead, .spk, .stamps, .start-row, .toprow, .tabs, .filters, .ladder-ctl, .callout, .speakers > .label",'a-rise'],
+ [".panel:not([hidden]), .tbl, .mapbox, .chips .chip, .fact, .results li",'a-rise'],
+ [".step, .tl li",'a-slide'],
+];
+function animatePage(pg){
+  if(RM||!pg)return;
+  const done=new Set();let i=0;
+  ANIM.forEach(([sel,cls])=>{pg.querySelectorAll(sel).forEach(el=>{
+    if(done.has(el)||el.closest(".kzmap"))return;done.add(el);
+    el.classList.remove("a-rise","a-slide");void el.offsetWidth;
+    el.style.setProperty("--i",Math.min(i++,14));el.classList.add(cls);
+    el.addEventListener("animationend",()=>{el.classList.remove(cls)},{once:true});
+  })});
+  const map=pg.querySelector(".kzmap");
+  if(map){
+    let j=0;
+    map.querySelectorAll(".ob,.ob-x").forEach(el=>{el.classList.remove("a-fade");void el.getBoundingClientRect();el.style.setProperty("--i",3+j++);el.classList.add("a-fade")});
+    let r=0;
+    map.querySelectorAll(".river").forEach(el=>{const L=Math.ceil(el.getTotalLength());el.style.setProperty("--len",L);el.classList.remove("a-draw");void el.getBoundingClientRect();el.style.setProperty("--i",6+r++);el.classList.add("a-draw")});
+    let c=0;
+    map.querySelectorAll(".city,.town").forEach(el=>{el.classList.remove("a-pop");void el.getBoundingClientRect();el.style.setProperty("--i",25+c++);el.classList.add("a-pop")});
+  }
+}
+
+/* background sound: synthesized dombra plucks + steppe wind + drone */
+(function(){
+  const AC=window.AudioContext||window.webkitAudioContext;
+  const box=$("#snd"),btn=$("#sndBtn"),vol=$("#sndVol");
+  if(!AC){box.hidden=true;return}
+  let ctx=null,master=null,on=false,timer=null,next=0,step=0,cur=3,cache={},windG=null;
+  try{const v=localStorage.getItem("sndVol");if(v!==null)vol.value=v}catch(e){}
+  const SC=[146.83,164.81,174.61,196.00,220.00,261.63,293.66,329.63,349.23,392.00];
+  const RH=[1,0,1,1, 1,0,1,0, 1,1,1,0, 1,0,1,1];
+  function ks(f){
+    const key=f.toFixed(2);if(cache[key])return cache[key];
+    const sr=ctx.sampleRate,len=Math.floor(sr*1.8),buf=ctx.createBuffer(1,len,sr),d=buf.getChannelData(0);
+    const N=Math.max(2,Math.round(sr/f)),r=new Float32Array(N);
+    for(let i=0;i<N;i++)r[i]=Math.random()*2-1;
+    for(let i=1;i<N;i++)r[i]=(r[i]+r[i-1])*.5;
+    let k=0;for(let i=0;i<len;i++){const a=r[k],b=r[(k+1)%N];r[k]=.4985*(a+b);d[i]=a;k=(k+1)%N}
+    return cache[key]=buf;
+  }
+  function pluck(f,t,g){
+    const s=ctx.createBufferSource();s.buffer=ks(f);
+    const gn=ctx.createGain();gn.gain.value=g;
+    const lp=ctx.createBiquadFilter();lp.type="lowpass";lp.frequency.value=2600;
+    s.connect(lp);lp.connect(gn);gn.connect(master);s.start(t);s.stop(t+1.8);
+  }
+  function build(){
+    ctx=new AC();master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);
+    // wind
+    const nb=ctx.createBuffer(1,ctx.sampleRate*3,ctx.sampleRate),nd=nb.getChannelData(0);
+    for(let i=0;i<nd.length;i++)nd[i]=Math.random()*2-1;
+    const ns=ctx.createBufferSource();ns.buffer=nb;ns.loop=true;
+    const bp=ctx.createBiquadFilter();bp.type="bandpass";bp.frequency.value=420;bp.Q.value=.8;
+    windG=ctx.createGain();windG.gain.value=.05;
+    const l1=ctx.createOscillator();l1.frequency.value=.06;const l1g=ctx.createGain();l1g.gain.value=260;l1.connect(l1g);l1g.connect(bp.frequency);
+    const l2=ctx.createOscillator();l2.frequency.value=.11;const l2g=ctx.createGain();l2g.gain.value=.03;l2.connect(l2g);l2g.connect(windG.gain);
+    ns.connect(bp);bp.connect(windG);windG.connect(master);ns.start();l1.start();l2.start();
+    // drone
+    [[73.42,.035],[110,.02]].forEach(([f,g])=>{const o=ctx.createOscillator();o.type="triangle";o.frequency.value=f;const gg=ctx.createGain();gg.gain.value=g;const lp=ctx.createBiquadFilter();lp.type="lowpass";lp.frequency.value=380;o.connect(lp);lp.connect(gg);gg.connect(master);o.start()});
+  }
+  const SPB=.24;
+  function tick(){
+    while(next<ctx.currentTime+.4){
+      const i=step%16,phrase=Math.floor(step/16)%4;
+      if(phrase===3&&i>=8){}else if(RH[i]){
+        if(i%4===0||Math.random()<.35){const mv=[-2,-1,-1,0,1,1,2][Math.floor(Math.random()*7)];cur=Math.max(0,Math.min(SC.length-1,cur+mv))}
+        const acc=i%4===0?1:.65;
+        pluck(SC[cur],next,.22*acc);
+        pluck(i%8===0?98.0:146.83,next+.012,.13*acc);
+      }
+      next+=SPB*(i%2===0?1.08:.92);step++;
+    }
+  }
+  function level(){return Math.pow(vol.value/100,1.5)*.9}
+  function start(){
+    if(!ctx)build();
+    ctx.resume();on=true;box.classList.add("on");btn.setAttribute("aria-pressed","true");
+    const t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(level(),t+1.5);
+    next=t+.1;clearInterval(timer);timer=setInterval(tick,100);tick();
+  }
+  function stop(){
+    on=false;box.classList.remove("on");btn.setAttribute("aria-pressed","false");
+    if(!ctx)return;const t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(0,t+.8);
+    clearInterval(timer);setTimeout(()=>{if(!on)ctx.suspend()},900);
+  }
+  btn.addEventListener("click",()=>on?stop():start());
+  vol.addEventListener("input",()=>{try{localStorage.setItem("sndVol",vol.value)}catch(e){}if(on&&ctx){const t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setTargetAtTime(level(),t,.1)}});
+  document.addEventListener("keydown",e=>{if((e.key==="m"||e.key==="M"||e.key==="ь"||e.key==="Ь")&&!e.ctrlKey&&!e.metaKey&&!e.target.closest("input,textarea"))on?stop():start()});
+})();
+
+/* pages */
+const pages=$$(".page"), links=$$("nav a"), totop=$("#totop");let pi=0;
+function show(i,scroll){
+  pi=Math.max(0,Math.min(pages.length-1,i));
+  pages.forEach((p,k)=>p.hidden=k!==pi);
+  animatePage(pages[pi]);
+  links.forEach((a,k)=>a.classList.toggle("on",k===pi));
+  const on=links[pi];if(on&&on.scrollIntoView)on.scrollIntoView({block:"nearest",inline:"center"});
+  $("#pnum").textContent=(pi+1)+" / "+pages.length;
+  $("#prev").disabled=pi===0;$("#next").disabled=pi===pages.length-1;
+  $("#next").textContent=pi===pages.length-1?"Соңы":"Келесі →";
+  if(scroll!==false)scrollTo({top:0});
+  try{history.replaceState(null,"","#"+(pages[pi].id||pages[pi].querySelector("section[id]").id))}catch(e){}
+}
+function goTo(id){const el=document.getElementById(id);if(!el)return;const k=pages.findIndex(p=>p.contains(el));if(k>=0)show(k);if(k>0)el.scrollIntoView()}
+document.addEventListener("click",e=>{const a=e.target.closest('a[href^="#"]');if(!a)return;e.preventDefault();goTo(a.getAttribute("href").slice(1))});
+$("#prev").addEventListener("click",()=>show(pi-1));
+$("#next").addEventListener("click",()=>show(pi+1));
+$("#start").addEventListener("click",()=>show(1));
+document.addEventListener("keydown",e=>{if(e.target.closest("input,textarea"))return;if(e.key==="ArrowRight"||e.key==="PageDown")show(pi+1);if(e.key==="ArrowLeft"||e.key==="PageUp")show(pi-1)});
+
+/* presentation mode */
+let hintT;
+function presOn(){
+  root.classList.add("present");applyZoom();
+  try{const r=document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();if(r&&r.catch)r.catch(()=>{})}catch(e){}
+  if(pi===0)show(1);else scrollTo({top:0});
+  const h=$("#presHint");h.classList.remove("gone");clearTimeout(hintT);hintT=setTimeout(()=>h.classList.add("gone"),3500);
+}
+function presOff(){
+  root.classList.remove("present");applyZoom();
+  try{if(document.fullscreenElement&&document.exitFullscreen){const r=document.exitFullscreen();if(r&&r.catch)r.catch(()=>{})}}catch(e){}
+}
+$("#presOn").addEventListener("click",presOn);
+$("#presOn2").addEventListener("click",presOn);
+$("#presOff").addEventListener("click",presOff);
+document.addEventListener("fullscreenchange",()=>{if(!document.fullscreenElement&&root.classList.contains("present"))presOff()});
+document.addEventListener("keydown",e=>{
+  if(e.target.closest("input,textarea"))return;
+  if(e.key==="Escape"&&root.classList.contains("present"))presOff();
+  if((e.key==="f"||e.key==="F"||e.key==="а"||e.key==="А")&&!e.ctrlKey&&!e.metaKey){root.classList.contains("present")?presOff():presOn()}
+  if(root.classList.contains("present")&&(e.key===" "||e.key==="Enter")&&!e.target.closest("button,a,[tabindex]")){e.preventDefault();show(pi+1)}
+});
+let h=(location.hash||"").slice(1);
+if(h){const el=document.getElementById(h);const k=el?pages.findIndex(p=>p.contains(el)):-1;show(k>=0?k:0,false)}else show(0,false);
+addEventListener("scroll",()=>{totop.hidden=window.scrollY<500},{passive:true});
+totop.addEventListener("click",()=>scrollTo({top:0}));
+
+})();
+</script>
+</body>
+</html>
